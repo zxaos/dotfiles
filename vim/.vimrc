@@ -10,9 +10,10 @@ syntax on			"Turn on syntax highlighting
 
 set laststatus=2	"Always show the status line
 
-
 "" Fonts and colours ""
 if has ("macunix")
     set guifont=Inconsolata:h16
+    set background=dark
+    colorscheme solarized
 endif
 
