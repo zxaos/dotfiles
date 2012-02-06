@@ -54,5 +54,35 @@
     set ignorecase    "Ignore case when searching but...
     set smartcase     "Don't ignore case when search term is mixed case
   " }
+  
+  " Commands {
+    set wildmenu      "Show list instead of completing commands
+    set wildmode=list:longest,full "Command tab completion, list matches, longest common part, all
+  " }
 " }
 
+" Formatting {
+  set foldenable
+  set autoindent      "Indent the same as the last line
+  " Default settings, to be overridden by file types
+  set shiftwidth=2
+  set expandtab
+  set tabstop=2
+  set softtabstop=4   "let backspace delete indent
+" }
+
+" Key Bindings {
+  let mapleader = ','
+
+  " Stupid shift-key typo fixes {
+   cmap W w
+   cmap WQ wq
+   cmap wQ wq
+   cmap Q q
+  " }
+" }
+
+" Extra Features {
+  set spelllang=en_ca
+  set spell
+" }
