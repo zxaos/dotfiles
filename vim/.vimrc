@@ -80,6 +80,11 @@
    cmap wQ wq
    cmap Q q
   " }
+  
+  " Plugins {
+  map <leader>s :TagbarToggle<CR> " Tagbar
+  "map <leader>t :CommandT<CR> " Command-T
+  " }
 " }
 
 " Extra Features {
