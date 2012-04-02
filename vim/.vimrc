@@ -27,6 +27,10 @@
       colorscheme solarized
     endif
   " }
+
+  if exists('+colorcolumn')
+    set colorcolumn=80
+  endif
     
   " Status and Ruler {
     if has('cmdline_info')
@@ -71,6 +75,11 @@
   set softtabstop=4   "let backspace delete indent
 " }
 
+" Plugin Settings{
+  let g:syntastic_check_on_open=1   "Check syntax when a file is first loaded
+  let g:syntastic_auto_loc_list=1   "Open and close Errors automatically
+" }
+
 " Key Bindings {
   let mapleader = ','
 
@@ -81,8 +90,8 @@
    cmap Q q
   " }
   
-  " Plugins {
-  map <leader>s :TagbarToggle<CR> " Tagbar
+  " Plugin Keybinds {
+  map <leader>s :TagbarToggle<CR>  " Tagbar
   "map <leader>t :CommandT<CR> " Command-T
   " }
 " }
@@ -90,4 +99,5 @@
 " Extra Features {
   set spelllang=en_ca
   set spell
+  set wildignore+=*.o,*.obj,.git,*.pyc  "Ignore files that are usually useless
 " }
