@@ -13,3 +13,6 @@
 [submodule "vim/.vim/bundle/vimtodo"]
 	path = vim/.vim/bundle/vimtodo
 	url = http://github.com/mivok/vimtodo.git
+[submodule "vim/.vim/bundle/command-t"]
+	path = vim/.vim/bundle/command-t
+	url = git://git.wincent.com/command-t.git
