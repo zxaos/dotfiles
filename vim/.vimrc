@@ -4,7 +4,7 @@
 " }
 
 " Bundle Support (Pathogen){
-  runtime bundle/vim-pathogen/autoload/pathogen.vim
+" runtime bundle/vim-pathogen/autoload/pathogen.vim
   call pathogen#infect()		"Use pathogen bundles
   call pathogen#helptags()
 " }
@@ -77,7 +77,8 @@
 
 " Plugin Settings{
   let g:syntastic_check_on_open=1   "Check syntax when a file is first loaded
-  let g:syntastic_auto_loc_list=1   "Open and close Errors automatically
+" Having the Errors window open currencly breaks macvim.
+"  let g:syntastic_auto_loc_list=1   "Open and close Errors automatically
 " }
 
 " Key Bindings {
