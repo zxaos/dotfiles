@@ -25,6 +25,10 @@
       set guifont=Inconsolata:h16
       set background=dark
       colorscheme solarized
+    elseif has ("unix")
+      set guifont=Inconsolata\ 14
+      set background=dark
+      colorscheme solarized
     endif
   " }
 

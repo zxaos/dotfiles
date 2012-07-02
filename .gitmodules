@@ -13,6 +13,9 @@
 [submodule "vim/.vim/bundle/tagbar"]
 	path = vim/.vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
+[submodule "vim/.vim/bundle/vimtodo"]
+	path = vim/.vim/bundle/vimtodo
+	url = http://github.com/mivok/vimtodo.git
 [submodule "vim/.vim/bundle/command-t"]
 	path = vim/.vim/bundle/command-t
 	url = git://git.wincent.com/command-t.git
