@@ -1,0 +1,8 @@
+Package Control
+
+#Appearance
+Theme - Soda
+
+#Code
+SublimeLinter
+SublimeCodeIntel
