@@ -1,0 +1,18 @@
+{
+	"installed_packages":
+	[
+		"Better CoffeeScript",
+		"BracketHighlighter",
+		"Emmet",
+		"Git",
+		"GitGutter",
+		"Handlebars",
+		"Origami",
+		"SublimeCodeIntel",
+		"sublimelint",
+		"Syntax Highlighting for Sass",
+		"Tomorrow Color Schemes",
+		"Vintageous",
+		"VintageousOrigami"
+	]
+}
