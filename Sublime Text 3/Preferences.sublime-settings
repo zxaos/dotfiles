@@ -1,6 +1,6 @@
 {
 	"always_show_minimap_viewport": true,
-	"color_scheme": "Packages/Tomorrow Color Schemes/Tomorrow-Night.tmTheme",
+	"color_scheme": "Packages/Base16 Color Schemes/base16-default.dark.tmTheme",
 	"default_line_ending": "unix",
 	"font_face": "PragmataPro",
 	"font_options":

@@ -1,8 +1,10 @@
 {
 	"installed_packages":
 	[
+		"Base16 Color Schemes",
 		"Better CoffeeScript",
 		"BracketHighlighter",
+		"DashDoc",
 		"Emmet",
 		"Git",
 		"GitGutter",
