@@ -1,3 +1,9 @@
 *.swp
 *~
 .DS_Store
+Sublime Text 3/User/*.cache
+Sublime Text 3/User/Package Control.last-run
+Sublime Text 3/User/Package Control.system-ca-bundle
+Sublime Text 3/User/linters
+
+
