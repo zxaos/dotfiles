@@ -1,5 +1,5 @@
 #Fix Brew paths first? some of the plugins probably need it before they run.
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
