@@ -14,8 +14,7 @@ DEFAULT_USER="matt"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
-alias ohmyzsh="subl ~/.oh-my-zsh"
-alias zshrc="subl ~/.zshrc"
+alias zshrc="subl ~/.oh-my-zsh ~/.zshrc"
 alias rake="noglob rake"
 
 # Set to this to use case-sensitive completion
