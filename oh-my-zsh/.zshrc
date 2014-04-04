@@ -16,6 +16,7 @@ DEFAULT_USER="matt"
 # alias zshconfig="mate ~/.zshrc"
 alias zshrc="subl ~/.oh-my-zsh ~/.zshrc"
 alias rake="noglob rake"
+alias b="bundle exec"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
