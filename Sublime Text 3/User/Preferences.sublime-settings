@@ -1,6 +1,7 @@
 {
 	"always_show_minimap_viewport": true,
-	"color_scheme": "Packages/Base16 Color Schemes/base16-default.dark.tmTheme",
+	"atomic_save": false,
+	"color_scheme": "Packages/User/base16-default.dark (SL).tmTheme",
 	"default_line_ending": "unix",
 	"font_face": "PragmataPro",
 	"font_options":
@@ -11,6 +12,7 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
+		"Emmet",
 		"Markdown",
 		"Vintage"
 	],

@@ -10,13 +10,14 @@
 		"GitGutter",
 		"Handlebars",
 		"MarkdownEditing",
+		"Marked App Menu",
 		"nginx",
 		"Origami",
 		"SublimeCodeIntel",
-		"sublimelint",
+		"SublimeLinter",
+		"SublimeLinter-php",
 		"Syntax Highlighting for Sass",
 		"Tomorrow Color Schemes",
-		"Vintageous",
-		"VintageousOrigami"
+		"Vintageous"
 	]
 }
