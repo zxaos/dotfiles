@@ -12,9 +12,9 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
+		"Vintage",
 		"Emmet",
-		"Markdown",
-		"Vintage"
+		"Markdown"
 	],
 	"line_padding_bottom": 0,
 	"line_padding_top": 0,
@@ -24,5 +24,6 @@
 		90
 	],
 	"tab_size": 2,
-	"translate_tabs_to_spaces": true
+	"translate_tabs_to_spaces": true,
+	"vintageous_use_ctrl_keys": true
 }
