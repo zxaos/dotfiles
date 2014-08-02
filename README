@@ -1,3 +1,5 @@
 Some personal dotfiles in a repository so that I can bring them everywhere. Probably not of interest to anyone else.
 
 To use the global gitignore, do `git config --global core.excludesfile '~/.dotfiles/gitignore_global'
+
+To use hyper key, use provided private.xml in [Karabiner](https://pqrs.org/osx/karabiner) and map caps lock key to keycode 80 in [Seil](https://pqrs.org/osx/karabiner/seil.html.en).
