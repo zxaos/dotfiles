@@ -4,3 +4,10 @@ To use the global gitignore, do `git config --global core.excludesfile '~/.dotfi
 
 ## Hyper Key
 To use hyper key, use provided private.xml in [Karabiner](https://pqrs.org/osx/karabiner) and map caps lock key to keycode 80 in [Seil](https://pqrs.org/osx/karabiner/seil.html.en). If pressing the remapped hyper key also presses escape, you forgot to unmap capslock in the standard keyboard preferences.
+
+## PLists
+Since Mavericks, simply replacing preferences plists is insufficient. You have to kick cfprefsd:
+ * Try `defaults read ~/Library/Preferences/bundle.id.path`
+ * Try `killall cfprefsd`
+ * Try (with the program closed), `defaults delete bundle.id.path` (e.g. `defaults delete com.manytricks.Moom` )
+ 
