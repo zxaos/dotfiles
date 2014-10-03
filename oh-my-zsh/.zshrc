@@ -76,3 +76,6 @@ fi
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 chruby 2.1.
+
+#Set up path for dev desktop first time we try to run drush
+alias drush="export PATH='/Applications/Dev Desktop/php5_3/bin:/Applications/Dev Desktop/mysql/bin:/Applications/Dev Desktop/drush:$PATH'; unalias drush"
