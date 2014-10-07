@@ -166,6 +166,24 @@
 			<key>PackagePath</key>
 			<string>/Users/matt/Library/Application Support/PopClip/Extensions/UnshortenLink.popclipext</string>
 		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.pilotmoon.popclip.extension.formatting</string>
+			<key>Extension Name</key>
+			<string>Formatting</string>
+			<key>Options</key>
+			<array/>
+			<key>Options Account Title</key>
+			<string>Formatting</string>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>Formatting.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/matt/Library/Application Support/PopClip/Extensions/Formatting.popclipext</string>
+		</dict>
 	</array>
 	<key>Version</key>
 	<integer>1</integer>
