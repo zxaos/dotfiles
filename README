@@ -10,4 +10,6 @@ Since Mavericks, simply replacing preferences plists is insufficient. You have t
  * Try `defaults read ~/Library/Preferences/bundle.id.path`
  * Try `killall cfprefsd`
  * Try (with the program closed), `defaults delete bundle.id.path` (e.g. `defaults delete com.manytricks.Moom` )
- 
+
+## PopClip
+Symlink plist to ~/Library/Preferences/com.pilotmoon.popclip.plist and the folder to ~/Library/Application Support/PopClip 
