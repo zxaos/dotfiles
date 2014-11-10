@@ -54,7 +54,7 @@ alias dg="noglob doing"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump battery bower brew brew-cask chruby docker git marked2 npm osx python sublime vagrant virtualenv virtualenvwrapper)
+plugins=(battery bower brew brew-cask chruby docker fasd git marked2 npm osx python sublime vagrant virtualenv virtualenvwrapper)
 
 source $ZSH/oh-my-zsh.sh
 
