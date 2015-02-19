@@ -8,13 +8,13 @@
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 13,
+	"font_size": 14,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage",
+		"Emmet",
 		"Markdown",
-		"Emmet"
+		"Vintage"
 	],
 	"line_padding_bottom": 0,
 	"line_padding_top": 0,

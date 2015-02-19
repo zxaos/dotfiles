@@ -1,4 +1,7 @@
 {
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
 		"ApacheConf.tmLanguage",
@@ -15,8 +18,10 @@
 		"Marked App Menu",
 		"nginx",
 		"Origami",
+		"Package Control",
 		"Pretty YAML",
 		"Ruby Slim",
+		"SFTP",
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-php",
