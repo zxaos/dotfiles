@@ -1,10 +1,14 @@
 {
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
 		"ApacheConf.tmLanguage",
 		"Base16 Color Schemes",
 		"Better CoffeeScript",
 		"BracketHighlighter",
+		"Cucumber",
 		"DashDoc",
 		"Emmet",
 		"Git",
@@ -15,8 +19,10 @@
 		"Marked App Menu",
 		"nginx",
 		"Origami",
+		"Package Control",
 		"Pretty YAML",
 		"Ruby Slim",
+		"SFTP",
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-php",
@@ -24,6 +30,7 @@
 		"Syntax Highlighting for Sass",
 		"Tomorrow Color Schemes",
 		"Vintageous",
-		"VintageousOrigami"
+		"VintageousOrigami",
+		"YAML Nav"
 	]
 }
