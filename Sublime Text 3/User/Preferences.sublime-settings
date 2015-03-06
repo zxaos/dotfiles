@@ -1,7 +1,7 @@
 {
 	"always_show_minimap_viewport": true,
 	"atomic_save": false,
-	"color_scheme": "Packages/User/base16-default.dark (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/base16-default.dark (SL).tmTheme",
 	"default_line_ending": "unix",
 	"font_face": "PragmataPro",
 	"font_options":
@@ -11,7 +11,7 @@
 	"font_size": 14,
 	"highlight_line": true,
 	"ignored_packages":
-	[	"Emmet",
+	[
 		"Markdown",
 		"Vintage"
 	],

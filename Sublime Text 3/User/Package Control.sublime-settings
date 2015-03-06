@@ -4,17 +4,11 @@
 	],
 	"installed_packages":
 	[
-		"ApacheConf.tmLanguage",
 		"Base16 Color Schemes",
 		"Better CoffeeScript",
 		"BracketHighlighter",
-		"Cucumber",
 		"DashDoc",
-		"Emmet",
-		"Git",
 		"GitGutter",
-		"Handlebars",
-		"Jinja2",
 		"MarkdownEditing",
 		"Marked App Menu",
 		"nginx",
@@ -23,14 +17,11 @@
 		"Pretty YAML",
 		"Ruby Slim",
 		"SFTP",
-		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-php",
 		"SublimeLinter-ruby",
 		"Syntax Highlighting for Sass",
-		"Tomorrow Color Schemes",
 		"Vintageous",
-		"VintageousOrigami",
-		"YAML Nav"
+		"VintageousOrigami"
 	]
 }
