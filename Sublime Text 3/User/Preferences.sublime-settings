@@ -3,7 +3,7 @@
 	"atomic_save": false,
 	"color_scheme": "Packages/User/SublimeLinter/base16-default.dark (SL).tmTheme",
 	"default_line_ending": "unix",
-	"font_face": "PragmataPro",
+	"font_face": "Input Sans",
 	"font_options":
 	[
 		"subpixel_antialias"
@@ -12,8 +12,8 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Markdown",
-		"Vintage"
+		"Vintage",
+		"Markdown"
 	],
 	"line_padding_bottom": 0,
 	"line_padding_top": 0,
