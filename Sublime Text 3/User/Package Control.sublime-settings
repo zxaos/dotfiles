@@ -8,14 +8,10 @@
 		"Base16 Color Schemes",
 		"Better CoffeeScript",
 		"BracketHighlighter",
-		"Cucumber",
 		"DashDoc",
-		"Emmet",
 		"ExportHtml",
 		"Git",
 		"GitGutter",
-		"Handlebars",
-		"Jinja2",
 		"MarkdownEditing",
 		"Marked App Menu",
 		"nginx",
@@ -29,9 +25,7 @@
 		"SublimeLinter-php",
 		"SublimeLinter-ruby",
 		"Syntax Highlighting for Sass",
-		"Tomorrow Color Schemes",
 		"Vintageous",
-		"VintageousOrigami",
-		"YAML Nav"
+		"VintageousOrigami"
 	]
 }
