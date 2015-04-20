@@ -11,7 +11,8 @@
 	"font_size": 14,
 	"highlight_line": true,
 	"ignored_packages":
-	[	"Emmet",
+	[
+		"Emmet",
 		"Markdown",
 		"Vintage"
 	],
