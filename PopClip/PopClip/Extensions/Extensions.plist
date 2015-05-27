@@ -184,6 +184,134 @@
 			<key>PackagePath</key>
 			<string>/Users/matt/Library/Application Support/PopClip/Extensions/Formatting.popclipext</string>
 		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.pilotmoon.popclip.extension.pasteplain</string>
+			<key>Extension Name</key>
+			<dict>
+				<key>ar</key>
+				<string>لصق =</string>
+				<key>ca</key>
+				<string>Enganxar =</string>
+				<key>cs</key>
+				<string>Vložit =</string>
+				<key>da</key>
+				<string>Sæt ind =</string>
+				<key>de</key>
+				<string>Einsetzen =</string>
+				<key>el</key>
+				<string>Επικόλληση =</string>
+				<key>en</key>
+				<string>Paste =</string>
+				<key>es</key>
+				<string>Pegar =</string>
+				<key>fi</key>
+				<string>Sijoita =</string>
+				<key>fr</key>
+				<string>Coller =</string>
+				<key>he</key>
+				<string> =הדבק</string>
+				<key>hr</key>
+				<string>Zalijepi =</string>
+				<key>hu</key>
+				<string>Beillesztés =</string>
+				<key>it</key>
+				<string>Incolla =</string>
+				<key>ja</key>
+				<string>ペースト =</string>
+				<key>ko</key>
+				<string>붙이기 =</string>
+				<key>nb</key>
+				<string>Lim inn =</string>
+				<key>nl</key>
+				<string>Plak =</string>
+				<key>pl</key>
+				<string>Wklej =</string>
+				<key>ro</key>
+				<string>Lipește =</string>
+				<key>ru</key>
+				<string>Вставить =</string>
+				<key>sk</key>
+				<string>Vložiť =</string>
+				<key>sv</key>
+				<string>Klistra in =</string>
+				<key>th</key>
+				<string>วาง =</string>
+				<key>tr</key>
+				<string>Yapıştır =</string>
+				<key>zh-Hans</key>
+				<string>粘贴 =</string>
+				<key>zh-Hant</key>
+				<string>貼上 =</string>
+			</dict>
+			<key>Options</key>
+			<array/>
+			<key>Options Account Title</key>
+			<dict>
+				<key>ar</key>
+				<string>لصق =</string>
+				<key>ca</key>
+				<string>Enganxar =</string>
+				<key>cs</key>
+				<string>Vložit =</string>
+				<key>da</key>
+				<string>Sæt ind =</string>
+				<key>de</key>
+				<string>Einsetzen =</string>
+				<key>el</key>
+				<string>Επικόλληση =</string>
+				<key>en</key>
+				<string>Paste =</string>
+				<key>es</key>
+				<string>Pegar =</string>
+				<key>fi</key>
+				<string>Sijoita =</string>
+				<key>fr</key>
+				<string>Coller =</string>
+				<key>he</key>
+				<string> =הדבק</string>
+				<key>hr</key>
+				<string>Zalijepi =</string>
+				<key>hu</key>
+				<string>Beillesztés =</string>
+				<key>it</key>
+				<string>Incolla =</string>
+				<key>ja</key>
+				<string>ペースト =</string>
+				<key>ko</key>
+				<string>붙이기 =</string>
+				<key>nb</key>
+				<string>Lim inn =</string>
+				<key>nl</key>
+				<string>Plak =</string>
+				<key>pl</key>
+				<string>Wklej =</string>
+				<key>ro</key>
+				<string>Lipește =</string>
+				<key>ru</key>
+				<string>Вставить =</string>
+				<key>sk</key>
+				<string>Vložiť =</string>
+				<key>sv</key>
+				<string>Klistra in =</string>
+				<key>th</key>
+				<string>วาง =</string>
+				<key>tr</key>
+				<string>Yapıştır =</string>
+				<key>zh-Hans</key>
+				<string>粘贴 =</string>
+				<key>zh-Hant</key>
+				<string>貼上 =</string>
+			</dict>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>PasteAndMatch.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/matt/Library/Application Support/PopClip/Extensions/PasteAndMatch.popclipext</string>
+		</dict>
 	</array>
 	<key>Version</key>
 	<integer>1</integer>
