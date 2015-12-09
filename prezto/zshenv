@@ -9,6 +9,6 @@
 if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
-
+export PATH="$HOME/.composer/vendor/bin:$PATH"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export EDITOR="vim"
