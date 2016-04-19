@@ -2092,7 +2092,18 @@
 			<key>Transparency</key>
 			<real>0.20908607542514801</real>
 			<key>Triggers</key>
-			<array/>
+			<array>
+				<dict>
+					<key>action</key>
+					<string>GrowlTrigger</string>
+					<key>parameter</key>
+					<string>Build \1 done</string>
+					<key>partial</key>
+					<false/>
+					<key>regex</key>
+					<string>\[[\d:]*\]\s*Finished\s*'(copyServer(Non)?NodeModules)' after .*</string>
+				</dict>
+			</array>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
