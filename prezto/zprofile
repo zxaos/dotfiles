@@ -75,4 +75,5 @@ TMPPREFIX="${TMPDIR%/}/zsh"
 
 # Hacks
 # Sublime linter requies path modification in _this file only. So make nodenv work here:
+export NODENV_ROOT=/usr/local/opt/nodenv
 if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi

@@ -3,12 +3,12 @@
 	"atomic_save": false,
 	"color_scheme": "Packages/User/SublimeLinter/base16-default.dark (SL).tmTheme",
 	"default_line_ending": "unix",
-	"font_face": "Input Mono",
+	"font_face": "PragmataPro",
 	"font_options":
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 11,
+	"font_size": 14,
 	"highlight_line": true,
 	"ignored_packages":
 	[

@@ -19,7 +19,7 @@ source ~/.iterm2_shell_integration.zsh
 
 # added for nodenv
 if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
-#export NODENV_ROOT=/usr/local/opt/nodenv
+export NODENV_ROOT=/usr/local/opt/nodenv
 #eval "$(nodenv init -)"
 
 # chruby auto switch
