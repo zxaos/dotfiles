@@ -8,13 +8,14 @@
 		"Alignment",
 		"Base16 Color Schemes",
 		"BracketHighlighter",
+		"Color Highlighter",
 		"DashDoc",
 		"EditorConfig",
 		"ExportHtml",
 		"Git",
 		"GitGutter",
 		"LESS",
-		"LiveStyle",
+		"MarkdownEditing",
 		"Marked App Menu",
 		"Origami",
 		"Package Control",
@@ -25,6 +26,7 @@
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-contrib-eslint",
+		"Theme - Alpenglow",
 		"Vintageous",
 		"VintageousOrigami"
 	]
