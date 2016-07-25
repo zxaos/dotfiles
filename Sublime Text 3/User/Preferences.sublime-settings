@@ -1,7 +1,7 @@
 {
 	"atomic_save": false,
-	"theme": "predawn-DEV.sublime-theme",
 	"color_scheme": "Packages/Predawn/predawn.tmTheme",
+	"color_variables_files":
 	[
 		"/Users/mattbond/Developer/roadmunk/app/client/assets/css/roadmunk-colors.less"
 	],
@@ -22,15 +22,16 @@
 	"line_padding_bottom": 0,
 	"line_padding_top": 0,
 	"open_files_in_new_window": false,
-	"predawn_tabs_small": true,
 	"predawn_sidebar_arrows": true,
 	"predawn_sidebar_xsmall": true,
+	"predawn_tabs_small": true,
 	"rulers":
 	[
 		90
 	],
 	"show_full_path": true,
 	"tab_size": 2,
+	"theme": "predawn-DEV.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"vintageous_use_ctrl_keys": true
 }
