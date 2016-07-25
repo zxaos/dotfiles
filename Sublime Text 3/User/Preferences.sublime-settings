@@ -1,7 +1,7 @@
 {
 	"atomic_save": false,
-	"color_scheme": "Packages/User/SublimeLinter/Afterglow-monokai (SL).tmTheme",
-	"color_variables_files":
+	"theme": "predawn-DEV.sublime-theme",
+	"color_scheme": "Packages/Predawn/predawn.tmTheme",
 	[
 		"/Users/mattbond/Developer/roadmunk/app/client/assets/css/roadmunk-colors.less"
 	],
@@ -22,16 +22,15 @@
 	"line_padding_bottom": 0,
 	"line_padding_top": 0,
 	"open_files_in_new_window": false,
-	"overlay_scroll_bars": "enabled",
+	"predawn_tabs_small": true,
+	"predawn_sidebar_arrows": true,
+	"predawn_sidebar_xsmall": true,
 	"rulers":
 	[
 		90
 	],
 	"show_full_path": true,
-	"status_bar_brighter": true,
 	"tab_size": 2,
-	"tabs_small": true,
-	"theme": "Alpenglow.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"vintageous_use_ctrl_keys": true
 }
