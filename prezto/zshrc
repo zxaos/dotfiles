@@ -23,4 +23,7 @@ export NODENV_ROOT=/usr/local/opt/nodenv
 #eval "$(nodenv init -)"
 
 # chruby auto switch
-#source /usr/local/share/chruby/auto.sh
+source /usr/local/share/chruby/auto.sh
+
+## Custom aliases
+alias batt='pmset -g batt'
