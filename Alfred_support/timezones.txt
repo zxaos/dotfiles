@@ -1,7 +1,0 @@
-Sydney|Sydney|Australia|-33.8674869|151.2069902|39600|Australia/Sydney|Australian Eastern Daylight Time|UTC+11
-Toronto|Toronto|Canada|43.6532260|-79.3831843|-14400|America/Toronto|Eastern Daylight Time|UTC-4
-Los Angeles|Los Angeles|United States|34.0522342|-118.2436849|-25200|America/Los_Angeles|Pacific Daylight Time|UTC-7
-London|London|United Kingdom|51.5112139|-0.1198244|0|Europe/London|Greenwich Mean Time|UTC+0
-Paris|Paris|France|48.8566140|2.3522219|3600|Europe/Paris|Central European Standard Time|UTC+1
-Delft|Delft|The Netherlands|52.0115769|4.3570677|7200|Europe/Amsterdam|Central European Summer Time|UTC+2
-Edina|Edina|United States|44.8896866|-93.3499489|-18000|America/Chicago|Central Daylight Time|UTC-5
