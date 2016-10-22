@@ -1,0 +1,33 @@
+# Set up completion styles
+zstyle ':completion:*' completer _expand _complete _ignored _match _correct _approximate
+zstyle ':completion:*' format 'Completing %d'
+zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' menu select=long
+zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
+zstyle :compinstall filename '/Users/matt/.zshrc'
+
+# Load and initialize the completion system ignoring checks of insecure directories but still dumping to cache.
+autoload -Uz compinit && compinit -C -d ~/.zcompdump
+
+# Offer to correct misspellings
+setopt correct
+
+# Save command history
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+
+# Use vim keybindings
+bindkey -v
+
+# Allow zsh online help
+ unalias run-help
+ autoload run-help
+ HELPDIR=/usr/local/share/zsh/help
+
+# Enable chruby and auto-switching
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+
+# Enable iterm2 integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
