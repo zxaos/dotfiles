@@ -31,3 +31,11 @@ source /usr/local/share/chruby/auto.sh
 
 # Enable iterm2 integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# Enable antibody zsh package manager
+source <(antibody init)
+if type antibody > /dev/null && [ -f ~/.zsh-antibody-plugins ]; then
+  source ~/.zsh-antibody-plugins
+else
+  echo "WARNING: PLUGINS NOT LOADED"
+fi
