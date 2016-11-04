@@ -29,6 +29,11 @@ bindkey -v
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
+# Enable nodenv and auto-switching
+if type nodenv > /dev/null; then
+  eval "$(nodenv init -)"
+fi;
+
 # Enable iterm2 integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
