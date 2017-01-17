@@ -34,6 +34,11 @@ if type nodenv > /dev/null; then
   eval "$(nodenv init -)"
 fi;
 
+# Allow user-local libraries in system python and ruby packages
+path+=("$HOME/Library/Python/2.7/bin")
+path+=("$HOME/.gem/ruby/2.0.0/bin")
+export PATH
+
 # Enable iterm2 integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
