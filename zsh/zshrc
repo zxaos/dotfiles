@@ -42,6 +42,10 @@ export PATH
 # Enable iterm2 integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# Aliases
+alias nvim='echo -e "\e]1337;SetProfile=vim\07" && nvim'
+it2prof() { echo -e "\e]1337;SetProfile=$1\07" }
+
 # Enable antibody zsh package manager
 source <(antibody init)
 if type antibody > /dev/null && [ -f ~/.zsh-antibody-plugins ]; then
