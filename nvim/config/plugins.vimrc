@@ -5,11 +5,14 @@ call dein#add('chriskempson/base16-vim')
 call dein#add('mhartington/oceanic-next')
 call dein#add('joshdick/onedark.vim')
 
-" Syntax
-call dein#add('pangloss/vim-javascript', {'on_ft': ['javascript']})
-
 " Code Intelligence
 call dein#add('neomake/neomake')
+call dein#add('Shougo/deoplete.nvim', {'on_i' : 1})
+"   - Javascript
+call dein#add('pangloss/vim-javascript', {'on_ft': 'javascript'})
+call dein#add('carlitux/deoplete-ternjs', {'on_ft': ['javascript', 'jsx']})
+
+" Git support
 call dein#add('tpope/vim-fugitive', {'on_cmd' : 'Gstatus'})
 
 "Plugins without dependencies:
