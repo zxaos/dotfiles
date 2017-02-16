@@ -1,3 +1,29 @@
+# Try to determine the current terminal emulator
+local pid=$$
+# echo "starting pid = $pid"
+TERM_EMULATOR_DETECTED='unknown'
+while true; do
+    # pid=$(ps -h -o ppid -p $pid 2>/dev/null) // this works in linux, but osx has BSD style PS instead
+    pid=$(ps -o 'ppid=' -p $pid 2>/dev/null | xargs) # get parent pid and strip whitespace with xargs
+    # echo "iterating pid as... as $pid"
+    local comm=$(ps -o 'comm=' -p $pid 2>/dev/null | xargs )
+    comm=$(basename $comm)
+    # echo "checking comm as... $comm"
+    case "$comm" in
+    (iTerm2) TERM_EMULATOR_DETECTED='iTerm2';break;;
+    (tmux) TERM_EMULATOR_DETECTED='tmux';break;;
+    (alacritty) TERM_EMULATOR_DETECTED='alacritty';break;;
+    (Terminal) TERM_EMULATOR_DETECTED='Terminal.app';break;;
+    # (xterm) TERM_EMULATOR_DETECTED='xterm';break;;
+    # (rxvt) TERM_EMULATOR_DETECTED='rxvt';break;;
+    # (gnome-terminal) TERM_EMULATOR_DETECTED='gnome-terminal';break;;
+    # (python) if [ ! -z "$(ps -h -o args -p $pid 2>/dev/null | grep guake)" ]; then TERM_EMULATOR_DETECTED='guake'; break; fi ;;
+    esac
+    [ "$pid" = 1 ] && break
+done
+# echo "Running in $TERM_EMULATOR_DETECTED"
+
+
 # Set up completion styles
 zstyle ':completion:*' completer _expand _complete _ignored _match _correct _approximate
 zstyle ':completion:*' format 'Completing %d'
@@ -39,17 +65,21 @@ path+=("$HOME/Library/Python/2.7/bin")
 path+=("$HOME/.gem/ruby/2.0.0/bin")
 export PATH
 
-# Enable iterm2 integration
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-# Aliases
-alias nvim='echo -e "\e]1337;SetProfile=vim\07" && nvim'
-it2prof() { echo -e "\e]1337;SetProfile=$1\07" }
-
 # Enable antibody zsh package manager
 source <(antibody init)
 if type antibody > /dev/null && [ -f ~/.zsh-antibody-plugins ]; then
   source ~/.zsh-antibody-plugins
 else
   echo "WARNING: PLUGINS NOT LOADED"
+fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+if [ $TERM_EMULATOR_DETECTED = 'iTerm2' ]; then
+  # Enable iterm2 integration
+  test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+  # Aliases
+  alias nvim='echo -e "\e]1337;SetProfile=vim\07" && nvim'
+  it2prof() { echo -e "\e]1337;SetProfile=$1\07" }
 fi
