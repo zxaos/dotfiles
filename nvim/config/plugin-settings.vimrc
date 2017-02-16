@@ -10,6 +10,7 @@ nmap <Leader><Space>n :lnext<CR>      " next error/warning
 nmap <Leader><Space>p :lprev<CR>      " previous error/warning
 
 " Deoplete
+let g:deoplete#enable_at_startup = 1
 
 " deoplete-ternjs
 " -- switch to a local tern install if it exists
@@ -24,3 +25,5 @@ nmap <Leader><Space>p :lprev<CR>      " previous error/warning
 
 let g:deoplete#omni#functions = {}
 let g:deoplete#omni#functions.javascript = [ 'tern#Complete' ]
+
+let g:airline_theme='oceanicnext'
