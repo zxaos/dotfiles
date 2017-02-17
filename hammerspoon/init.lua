@@ -8,6 +8,11 @@ k:bind({}, 'd', nil, function()
 		k.triggered = true
 end)
 
+k:bind({}, 't', nil, function()
+    hs.eventtap.keyStroke({"cmd","alt","shift","ctrl"}, 't')
+    k.triggered = true
+end)
+
 k:bind({}, 'm', nil, function()
 		hs.eventtap.keyStroke({"cmd","alt","shift","ctrl"}, 'm')
 		k.triggered = true
