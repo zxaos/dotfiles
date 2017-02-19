@@ -80,24 +80,6 @@ export XDG_CACHE_HOME=~/.cache.
 export XDG_DATA_HOME=~/.local/share
 export XDG_RUNTIME_DIR=$TMPDIR
 
-# aliax tmux = tmux -f "$XDG_CONFIG_HOME"/tmux/tmux.conf
-tm(){
-  if [ -z "$@" ]; then
-    # session_name="$(basename $(pwd))"
-    # session_name="${session_name//./-}" # Periods aren't allowed as of tmux1.9a
-    session_name="default"
-
-    # Attach to session with the current directory name if one exists,
-    # otherwise automatically create a session with the current directory name
-    # tmux_cmd="-f '$XDG_CONFIG_HOME/tmux/tmux.conf' new -A -s $session_name"
-    tmux_cmd="-f $XDG_CONFIG_HOME/tmux/tmux.conf"
-  else
-    # Otherwise just forward along the arguments given
-    tmux_cmd="$@"
-  fi
-  $(tmux ${tmux_cmd})
-}
-alias tmux=tmux -f $XDG_CONFIG_HOME/tmux/tmux.conf
 export TMUX_TMPDIR="$XDG_RUNTIME_DIR"
 
 if [ $TERM_EMULATOR_DETECTED = 'iTerm2' ]; then
