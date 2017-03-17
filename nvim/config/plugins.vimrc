@@ -9,6 +9,7 @@ call dein#add('mhartington/oceanic-next')
 call dein#add('neomake/neomake')
 call dein#add('Shougo/deoplete.nvim', {'on_i' : 1})
 call dein#add('rizzatti/dash.vim')
+call dein#add('tpope/vim-commentary')
 
 "   - Javascript
 call dein#add('pangloss/vim-javascript', {'on_ft': ['javascript', 'jsx']})
@@ -35,6 +36,10 @@ call dein#add('vim-airline/vim-airline', { 'depends': ['vim-bufferline', 'vim-fu
 " Other
 call dein#add('dpc/vim-smarttabs', {'on_i' : 1})
 call dein#add('tpope/vim-vinegar')
+
+" Taskpaper
+" (on ft taskpaper? on ext?)
+call dein#add('davidoc/taskpaper.vim')
 
 "Plugins without dependencies:
 "call dein#add('mileszs/ack.vim')
