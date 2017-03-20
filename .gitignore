@@ -23,3 +23,5 @@ fish/fishd.*
 
 #nvim file browser
 .netrwhist
+nvim/autoload
+nvim/vim-plug-plugins

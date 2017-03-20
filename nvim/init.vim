@@ -1,6 +1,5 @@
-" Plugin manager and other initial settings
-" (Also sources plugins.vimrc)
-source $HOME/.config/nvim/config/init.vimrc
+" Load plugin manager and plugins
+source $HOME/.config/nvim/plugins.vimrc
 
 " General settings, look and feel
 source $HOME/.config/nvim/config/general.vimrc
