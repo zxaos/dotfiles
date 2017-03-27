@@ -33,7 +33,6 @@ Plug 'neomake/neomake'
 
 " Code Editing Improvements
 Plug 'tpope/vim-commentary'
-Plug 'dpc/vim-smarttabs'
 
 " Language : Javascript
 Plug 'pangloss/vim-javascript'
@@ -44,6 +43,7 @@ Plug 'davidoc/taskpaper.vim'
 
 " Tool Support
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 Plug 'rizzatti/dash.vim'
 " dir should match fzf install - this one is homebrew
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
