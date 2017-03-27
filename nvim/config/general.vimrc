@@ -26,9 +26,9 @@ nmap <Leader>rc :source $MYVIMRC<CR>
 set tabstop=2
 
 " Show relative line numbers
-set relativenumber
-" except on the current line, show that as absolute (disabled for now because airline shows it)
-" set number
+" disabled for now due to scrolling performance
+"set relativenumber
+set number
 
 " Use system clipboard
 set clipboard=unnamed
@@ -39,3 +39,9 @@ set undofile
 " More natural splits right/below instead of left/above
 set splitbelow
 set splitright
+
+" Update unmodified files when file on disk changes
+set autoread
+
+" Try to improve scrolling performance
+set lazyredraw
