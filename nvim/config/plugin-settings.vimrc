@@ -27,3 +27,9 @@ let g:deoplete#omni#functions = {}
 let g:deoplete#omni#functions.javascript = [ 'tern#Complete' ]
 
 let g:airline_theme='oceanicnext'
+let g:airline#extensions#whitespace#mixed_indent_algo = 2
+" Since use powerline symbols
+let g:airline_powerline_fonts = 1
+" By default, airline shows file format and encoding
+" Remove it so buffer list has more space
+let g:airline_section_y=''
