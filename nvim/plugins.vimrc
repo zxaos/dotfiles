@@ -34,6 +34,9 @@ Plug 'neomake/neomake'
 " Code Editing Improvements
 Plug 'tpope/vim-commentary'
 
+" Navigation improvements
+Plug 'weynhamz/vim-plugin-minibufexpl'
+
 " Language : Javascript
 Plug 'pangloss/vim-javascript'
 Plug 'carlitux/deoplete-ternjs'
