@@ -40,6 +40,7 @@ Plug 'weynhamz/vim-plugin-minibufexpl'
 " Language : Javascript
 Plug 'pangloss/vim-javascript'
 Plug 'carlitux/deoplete-ternjs'
+Plug 'heavenshell/vim-jsdoc'
 
 " Language : Taskpaper
 Plug 'davidoc/taskpaper.vim'
