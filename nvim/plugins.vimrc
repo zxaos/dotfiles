@@ -42,6 +42,9 @@ Plug 'heavenshell/vim-jsdoc'
 " Language : Taskpaper
 Plug 'davidoc/taskpaper.vim'
 
+" Language : CSS
+Plug 'ap/vim-css-color'
+
 " Tool Support
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
