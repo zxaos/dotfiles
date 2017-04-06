@@ -13,12 +13,6 @@ set background=dark
 " Space instead of \ for leader
 let mapleader = "\<Space>"
 
-" Show commands in progress
-set showcmd
-
-" Show current mode
-set showmode
-
 " Refresh vimrc
 nmap <Leader>rc :source $MYVIMRC<CR>
 
