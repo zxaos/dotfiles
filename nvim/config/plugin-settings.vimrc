@@ -27,7 +27,7 @@ let g:deoplete#enable_at_startup = 1
 let g:deoplete#omni#functions = {}
 let g:deoplete#omni#functions.javascript = [ 'tern#Complete' ]
 
-let g:airline_theme='oceanicnext'
+let g:airline_theme='base16'
 let g:airline#extensions#whitespace#mixed_indent_algo = 2
 " Since use powerline symbols
 let g:airline_powerline_fonts = 1

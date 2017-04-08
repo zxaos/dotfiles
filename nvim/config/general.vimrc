@@ -7,7 +7,8 @@ if (has("termguicolors"))
 endif
 
 " Set default color scheme
-colorscheme OceanicNext
+" colorscheme OceanicNext
+colorscheme base16-default-dark
 set background=dark
 
 " Space instead of \ for leader
@@ -21,7 +22,7 @@ set tabstop=2
 
 " Show relative line numbers
 " disabled for now due to scrolling performance
-"set relativenumber
+set relativenumber
 set number
 
 " Use system clipboard
@@ -33,6 +34,12 @@ set undofile
 " More natural splits right/below instead of left/above
 set splitbelow
 set splitright
+
+" Better window shorcuts
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " Update unmodified files when file on disk changes
 set autoread

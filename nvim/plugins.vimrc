@@ -23,8 +23,8 @@ call plug#begin("$HOME/.config/nvim/vim-plug-plugins")
 " Plug '~/my-prototype-plugin'
 
 " Color Schemes
-Plug 'mhartington/oceanic-next'
-" Plug 'chriskempson/base16-vim'
+" Plug 'mhartington/oceanic-next'
+Plug 'chriskempson/base16-vim'
 " Plug 'joshdick/onedark.vim'
 
 " Code Intelligence
@@ -59,6 +59,7 @@ Plug 'LucHermitte/lh-vim-lib' | Plug 'LucHermitte/local_vimrc'
 " Status Line Enhancements
 Plug 'bling/vim-bufferline'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Suggested Maybe?
 " Plug 'junegunn/vim-easy-align'
