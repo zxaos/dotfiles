@@ -7,13 +7,14 @@ while true; do
     pid=$(ps -o 'ppid=' -p $pid 2>/dev/null | xargs) # get parent pid and strip whitespace with xargs
     # echo "iterating pid as... as $pid"
     local comm=$(ps -o 'comm=' -p $pid 2>/dev/null | xargs )
-    comm=$(basename $comm)
+    comm=$(basename -- $comm)
     # echo "checking comm as... $comm"
     case "$comm" in
     (iTerm2) TERM_EMULATOR_DETECTED='iTerm2';break;;
     (tmux) TERM_EMULATOR_DETECTED='tmux';break;;
     (alacritty) TERM_EMULATOR_DETECTED='alacritty';break;;
     (Terminal) TERM_EMULATOR_DETECTED='Terminal.app';break;;
+    (nvim) TERM_EMULATOR_DETECTED='nvim';break;;
     # (xterm) TERM_EMULATOR_DETECTED='xterm';break;;
     # (rxvt) TERM_EMULATOR_DETECTED='rxvt';break;;
     # (gnome-terminal) TERM_EMULATOR_DETECTED='gnome-terminal';break;;
