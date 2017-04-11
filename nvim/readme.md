@@ -1,9 +1,8 @@
 # General Setup Steps
 * Symlink the nvim directory to ~/.config/nvim/
-* Install dein: https://github.com/Shougo/dein.vim
-  * The install directory is given in the init.vimrc with the other dein setup code
-* In nvim, run :CheckHealth and make sure everything's ok
-* In nvim run :call dein#install()
+* Install [vim-plug](https://github.com/junegunn/vim-plug)
+* In nvim, run `:CheckHealth` and make sure everything's ok
+* In nvim run `:PlugInstall` to get plugins
 
 # Plugin-Specific setup
 ## Neomake
