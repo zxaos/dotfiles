@@ -89,11 +89,11 @@ if type "nvim" > /dev/null; then
   alias vim='nvim'
 fi
 
-if [ $TERM_EMULATOR_DETECTED = 'iTerm2-disabled' ]; then
+if [ $TERM_EMULATOR_DETECTED = 'iTerm2' ]; then
   # Enable iterm2 integration
   test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
   # Aliases
-  alias nvim='echo -e "\e]1337;SetProfile=vim\07" && nvim'
+  alias nvim='echo -e "\e]1337;SetProfile=vim\07" && nvim && echo -e "\e]1337;SetProfile=Nova\07"'
   it2prof() { echo -e "\e]1337;SetProfile=$1\07" }
 fi
