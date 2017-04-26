@@ -18,10 +18,10 @@ k:bind({}, 'm', nil, function()
 		k.triggered = true
 end)
 
--- HYPER+L: Open news.google.com in the default browser
+-- HYPER+L: Open dev board in the default browser
 lfun = function()
-  news = "app = Application.currentApplication(); app.includeStandardAdditions = true; app.doShellScript('open http://news.google.com')"
-  hs.osascript.javascript(news)
+  target = "app = Application.currentApplication(); app.includeStandardAdditions = true; app.doShellScript('open https://trello.com/b/31p5PlZu/development')"
+  hs.osascript.javascript(target)
   k.triggered = true
 end
 k:bind('', 'l', nil, lfun)
