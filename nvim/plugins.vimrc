@@ -33,6 +33,7 @@ Plug 'neomake/neomake'
 
 " Code Editing Improvements
 Plug 'tpope/vim-commentary'
+Plug 'junegunn/vim-easy-align'
 
 " Language : Javascript
 Plug 'pangloss/vim-javascript'

@@ -3,12 +3,17 @@ let g:neomake_javascript_enabled_makers = ['eslint']
 " For now. This is kind of a problem.
 let g:neomake_javascript_eslint_exe = '/Users/matt/.nodenv/versions/6.9.4/bin/eslint'
 
-" Neomake
-nmap <Leader><Space>o :lopen<CR>      " open location window
-nmap <Leader><Space>c :lclose<CR>     " close location window
-nmap <Leader><Space>, :ll<CR>         " go to current error/warning
-nmap <Leader><Space>n :lnext<CR>      " next error/warning
-nmap <Leader><Space>p :lprev<CR>      " previous error/warning
+nmap <Leader><Space>o :lopen<CR>  " open location window
+nmap <Leader><Space>c :lclose<CR> " close location window
+nmap <Leader><Space>, :ll<CR>     " go to current error/warning
+nmap <Leader><Space>n :lnext<CR>  " next error/warning
+nmap <Leader><Space>p :lprev<CR>  " previous error/warning
+
+" vim-easy-align
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 
 " Deoplete
 let g:deoplete#enable_at_startup = 1
