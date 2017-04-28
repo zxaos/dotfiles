@@ -93,7 +93,14 @@ if [ $TERM_EMULATOR_DETECTED = 'iTerm2' ]; then
   # Enable iterm2 integration
   test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+  function it2prof() { echo -e "\e]1337;SetProfile=$1\07" }
+
   # Aliases
-  alias nvim='echo -e "\e]1337;SetProfile=vim\07" && nvim && echo -e "\e]1337;SetProfile=Nova\07"'
-  it2prof() { echo -e "\e]1337;SetProfile=$1\07" }
+  function _nvim(){ # Set vim profile, run vim, set Nova profile on exit
+    it2prof vim
+    nvim "$@"
+    it2prof Nova
+  }
+  alias nvim='_nvim'
+
 fi
