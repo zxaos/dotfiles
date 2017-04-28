@@ -46,6 +46,9 @@ Plug 'davidoc/taskpaper.vim'
 " Language : CSS
 Plug 'ap/vim-css-color'
 
+" Language : Ansible / YAML
+Plug 'pearofducks/ansible-vim'
+
 " Tool Support
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
