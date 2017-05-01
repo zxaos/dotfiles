@@ -65,8 +65,9 @@ Plug 'bling/vim-bufferline'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+Plug 'edkolev/tmuxline.vim'
+
 " Suggested Maybe?
-" Plug 'junegunn/vim-easy-align'
 " Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 " Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 " Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }

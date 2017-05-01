@@ -25,3 +25,6 @@ fish/fishd.*
 .netrwhist
 nvim/autoload
 nvim/vim-plug-plugins
+
+# Generated tmuxline configuration
+tmux/tmuxline.conf
