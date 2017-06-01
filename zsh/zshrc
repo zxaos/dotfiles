@@ -61,6 +61,17 @@ if type nodenv > /dev/null; then
   eval "$(nodenv init -)"
 fi;
 
+# Araxis Merge conflicts with ImageMagick if installed ('compare' binary) - prefer araxis.
+# This means prepending the Araxis utils directory to PATH before the homebrew directory
+# If homebrew is not found, it just gets added to the end of the path
+if [ -d "/Applications/Araxis Merge.app/Contents/Utilities" ]; then
+  local brew_path_index
+	local brew_path
+	brew_path_index=$path[(i)/usr/local/bin]
+	brew_path=$path[$brew_path_index]
+	path[brew_path_index]=( "/Applications/Araxis Merge.app/Contents/Utilities" $brew_path )
+fi
+
 # Allow user-local libraries in system python and ruby packages
 path+=("$HOME/Library/Python/2.7/bin")
 path+=("$HOME/.gem/ruby/2.0.0/bin")
@@ -96,11 +107,11 @@ if [ $TERM_EMULATOR_DETECTED = 'iTerm2' ]; then
   function it2prof() { echo -e "\e]1337;SetProfile=$1\07" }
 
   # Aliases
-  function _nvim(){ # Set vim profile, run vim, set Nova profile on exit
-    it2prof vim
-    nvim "$@"
-    it2prof Nova
-  }
-  alias nvim='_nvim'
+  #function _nvim(){ # Set vim profile, run vim, set Nova profile on exit
+  #  it2prof vim
+  #  nvim "$@"
+  #  it2prof Nova
+  #}
+  #alias nvim='_nvim'
 
 fi
