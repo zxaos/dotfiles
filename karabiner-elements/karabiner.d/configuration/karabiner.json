@@ -1,38 +1,188 @@
 {
-    "profiles": [
+  "global": {
+    "check_for_updates_on_startup": true,
+    "show_in_menu_bar": false,
+    "show_profile_name_in_menu_bar": false
+  },
+  "profiles": [
+    {
+      "complex_modifications": {
+        "rules": [
+          {
+            "manipulators": [
+              {
+                "description": "Change caps_lock to command+control+option+shift. Escape if no other key used.",
+                "from": {
+                  "key_code": "caps_lock",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "left_shift",
+                    "modifiers": [
+                      "left_command",
+                      "left_control",
+                      "left_option"
+                    ]
+                  }
+                ],
+                "to_if_alone": [
+                  {
+                    "key_code": "escape",
+                    "modifiers": {
+                      "optional": [
+                        "any"
+                      ]
+                    }
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          }
+        ]
+      },
+      "devices": [
         {
-            "selected": true,
-            "simple_modifications": {
-                "caps_lock": "f18",
-                "escape": "caps_lock"
-            },
-            "name": "internal"
+          "disable_built_in_keyboard_if_exists": false,
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 627,
+            "vendor_id": 1452
+          },
+          "ignore": false
+        }
+      ],
+      "fn_function_keys": {
+        "f1": "vk_consumer_brightness_down",
+        "f10": "mute",
+        "f11": "volume_down",
+        "f12": "volume_up",
+        "f2": "vk_consumer_brightness_up",
+        "f3": "vk_mission_control",
+        "f4": "vk_launchpad",
+        "f5": "vk_consumer_illumination_down",
+        "f6": "vk_consumer_illumination_up",
+        "f7": "vk_consumer_previous",
+        "f8": "vk_consumer_play",
+        "f9": "vk_consumer_next"
+      },
+      "name": "internal",
+      "selected": true,
+      "simple_modifications": {
+        "escape": "caps_lock"
+      },
+      "virtual_hid_keyboard": {
+        "caps_lock_delay_milliseconds": 0,
+        "keyboard_type": "ansi"
+      }
+    },
+    {
+      "complex_modifications": {
+        "rules": [
+          {
+            "manipulators": [
+              {
+                "description": "Change caps_lock to command+control+option+shift. Escape if no other key used.",
+                "from": {
+                  "key_code": "caps_lock",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "left_shift",
+                    "modifiers": [
+                      "left_command",
+                      "left_control",
+                      "left_option"
+                    ]
+                  }
+                ],
+                "to_if_alone": [
+                  {
+                    "key_code": "escape",
+                    "modifiers": {
+                      "optional": [
+                        "any"
+                      ]
+                    }
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          }
+        ]
+      },
+      "devices": [
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 1957,
+            "vendor_id": 1118
+          },
+          "ignore": false
         },
         {
-            "selected": false,
-            "simple_modifications": {
-                "left_option": "left_command",
-                "caps_lock": "f18",
-                "right_command": "right_option",
-                "left_command": "left_option",
-                "escape": "caps_lock",
-                "right_option": "right_command"
-            },
-            "name": "external",
-            "fn_function_keys": {
-                "f1": "vk_consumer_brightness_down",
-                "f2": "vk_consumer_brightness_up",
-                "f3": "vk_mission_control",
-                "f4": "vk_launchpad",
-                "f5": "vk_consumer_illumination_down",
-                "f6": "vk_consumer_illumination_up",
-                "f7": "vk_consumer_previous",
-                "f8": "vk_consumer_play",
-                "f9": "vk_consumer_next",
-                "f12": "volume_up",
-                "f10": "mute",
-                "f11": "volume_down"
-            }
+          "disable_built_in_keyboard_if_exists": false,
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 65535,
+            "vendor_id": 1452
+          },
+          "ignore": false
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 627,
+            "vendor_id": 1452
+          },
+          "ignore": false
         }
-    ]
+      ],
+      "fn_function_keys": {
+        "f1": "vk_consumer_brightness_down",
+        "f10": "mute",
+        "f11": "volume_down",
+        "f12": "volume_up",
+        "f2": "vk_consumer_brightness_up",
+        "f3": "vk_mission_control",
+        "f4": "vk_launchpad",
+        "f5": "vk_consumer_illumination_down",
+        "f6": "vk_consumer_illumination_up",
+        "f7": "vk_consumer_previous",
+        "f8": "vk_consumer_play",
+        "f9": "vk_consumer_next"
+      },
+      "name": "external",
+      "selected": false,
+      "simple_modifications": {
+        "caps_lock": "f18",
+        "escape": "caps_lock",
+        "left_command": "left_option",
+        "left_option": "left_command",
+        "right_command": "right_option",
+        "right_option": "right_command"
+      },
+      "virtual_hid_keyboard": {
+        "caps_lock_delay_milliseconds": 0,
+        "keyboard_type": "ansi"
+      }
+    }
+  ]
 }
