@@ -1,3 +1,6 @@
+# `.zshrc' is sourced in interactive shells. It should contain commands to set up aliases, functions, options, key bindings, etc.
+# See http://zsh.sourceforge.net/Intro/intro_3.html
+
 # Try to determine the current terminal emulator
 local pid=$$
 # echo "starting pid = $pid"
@@ -62,22 +65,6 @@ source /usr/local/share/chruby/auto.sh
 if type nodenv > /dev/null; then
   eval "$(nodenv init -)"
 fi;
-
-# Araxis Merge conflicts with ImageMagick if installed ('compare' binary) - prefer araxis.
-# This means prepending the Araxis utils directory to PATH before the homebrew directory
-# If homebrew is not found, it just gets added to the end of the path
-if [ -d "/Applications/Araxis Merge.app/Contents/Utilities" ]; then
-  local brew_path_index
-	local brew_path
-	brew_path_index=$path[(i)/usr/local/bin]
-	brew_path=$path[$brew_path_index]
-	path[brew_path_index]=( "/Applications/Araxis Merge.app/Contents/Utilities" $brew_path )
-fi
-
-# Allow user-local libraries in system python and ruby packages
-path+=("$HOME/Library/Python/2.7/bin")
-path+=("$HOME/.gem/ruby/2.0.0/bin")
-export PATH
 
 # Enable antibody zsh package manager
 source <(antibody init)
