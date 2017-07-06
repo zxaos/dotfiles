@@ -98,6 +98,20 @@ export TMUX_TMPDIR="$XDG_RUNTIME_DIR"
 
 export CLICOLOR=1
 
+if type "aws-keychain" > /dev/null; then
+  aws () {
+    local validkey;
+    validkey=$(grep -l "^${argv[1]}$" ~/.aws/aws-keychain.list)
+    if [[ -z $validkey ]]; then
+      echo "You must pass in a valid aws keychain alias"
+      echo "Take a look in ~/.aws/aws-keychain.list for valid options"
+      echo "Or add your keychain via aws-keychain add"
+      return
+    fi
+    aws-keychain exec $argv[1] aws ${argv:2}
+  }
+fi
+
 if type "nvim" > /dev/null; then
   alias vim='nvim'
 fi
