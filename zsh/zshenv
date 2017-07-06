@@ -1,0 +1,30 @@
+# `.zshenv' is sourced on all invocations of the shell, unless the -f option is set. It should contain commands to set the command search path, plus other important environment variables. `.zshenv' should not contain commands that produce output or assume the shell is attached to a tty. See http://zsh.sourceforge.net/Intro/intro_3.html
+
+: ${LANG:="en_CA.UTF-8"}
+: ${LC_COLLATE:="en_CA.UTF-8"}
+: ${LC_CTYPE:="en_CA.UTF-8"}
+: ${LC_MESSAGES:="en_CA.UTF-8"}
+: ${LC_MONETARY:="en_CA.UTF-8"}
+: ${LC_NUMERIC:="en_CA.UTF-8"}
+: ${LC_TIME:="en_CA.UTF-8"}
+export LANG LC_COLLATE LC_CTYPE LC_MESSAGES LC_MONETARY LC_NUMERIC LC_TIME
+
+# If run non-interactively, osx will not set a $PATH that includes homebrew.
+typeset -U path
+path+=("/usr/local/bin")
+
+# Araxis Merge conflicts with ImageMagick if installed ('compare' binary) - prefer araxis.
+# This means prepending the Araxis utils directory to PATH before the homebrew directory
+# If homebrew is not found, it just gets added to the end of the path
+if [ -d "/Applications/Araxis Merge.app/Contents/Utilities" ]; then
+  local brew_path_index
+	local brew_path
+	brew_path_index=$path[(i)/usr/local/bin]
+	brew_path=$path[$brew_path_index]
+	path[brew_path_index]=( "/Applications/Araxis Merge.app/Contents/Utilities" $brew_path )
+fi
+
+# Allow user-local libraries in system python and ruby packages
+path+=("$HOME/Library/Python/2.7/bin")
+path+=("$HOME/.gem/ruby/2.0.0/bin")
+export PATH
