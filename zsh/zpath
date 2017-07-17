@@ -17,6 +17,14 @@ if [ -d "/usr/local/opt/go/libexec/bin" ]; then
   path+=("/usr/local/opt/go/libexec/bin")
 fi
 
+if [ -d "$HOME/.go" ]; then
+  export GOPATH="$HOME/.go"
+fi
+
+if [ -d "$HOME/.go/bin" ]; then
+  path+=("$HOME/.go/bin")
+fi
+
 # Allow user-local libraries in system python and ruby packages
 path+=("$HOME/Library/Python/2.7/bin")
 path+=("$HOME/.gem/ruby/2.0.0/bin")
