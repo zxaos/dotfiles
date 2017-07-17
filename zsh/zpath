@@ -1,0 +1,23 @@
+# If run non-interactively, osx will not set a $PATH that includes homebrew.
+path+=("/usr/local/bin")
+
+# Araxis Merge conflicts with ImageMagick if installed ('compare' binary) - prefer araxis.
+# This means prepending the Araxis utils directory to PATH before the homebrew directory
+# If homebrew is not found, it just gets added to the end of the path
+if [ -d "/Applications/Araxis Merge.app/Contents/Utilities" ]; then
+  local brew_path_index
+	local brew_path
+	brew_path_index=$path[(i)/usr/local/bin]
+	brew_path=$path[$brew_path_index]
+	path[brew_path_index]=( "/Applications/Araxis Merge.app/Contents/Utilities" $brew_path )
+fi
+
+# if go is installed via brew, add path for GOROOT installs
+if [ -d "/usr/local/opt/go/libexec/bin" ]; then
+  path+=("/usr/local/opt/go/libexec/bin")
+fi
+
+# Allow user-local libraries in system python and ruby packages
+path+=("$HOME/Library/Python/2.7/bin")
+path+=("$HOME/.gem/ruby/2.0.0/bin")
+export PATH

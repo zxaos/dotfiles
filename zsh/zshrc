@@ -1,6 +1,10 @@
 # `.zshrc' is sourced in interactive shells. It should contain commands to set up aliases, functions, options, key bindings, etc.
 # See http://zsh.sourceforge.net/Intro/intro_3.html
 
+# set up paths here again. It means they're getting set up twice in interactive shells
+# but that's the workaround for OSX being silly about it
+source ~/.zpath
+
 # Try to determine the current terminal emulator
 local pid=$$
 # echo "starting pid = $pid"
