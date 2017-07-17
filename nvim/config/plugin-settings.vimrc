@@ -9,6 +9,9 @@ nmap <Leader><Space>, :ll<CR>     " go to current error/warning
 nmap <Leader><Space>n :lnext<CR>  " next error/warning
 nmap <Leader><Space>p :lprev<CR>  " previous error/warning
 
+" bind vinegar to \ so that + and - can resize instead
+nmap \ <Plug>VinegarUp
+
 " vim-easy-align
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
