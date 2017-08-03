@@ -5,8 +5,8 @@ path+=("/usr/local/bin")
 # This means prepending the Araxis utils directory to PATH before the homebrew directory
 # If homebrew is not found, it just gets added to the end of the path
 if [ -d "/Applications/Araxis Merge.app/Contents/Utilities" ]; then
-  local brew_path_index
-	local brew_path
+  local brew_path_index >/dev/null 2&>1
+	local brew_path >/dev/null 2&>1
 	brew_path_index=$path[(i)/usr/local/bin]
 	brew_path=$path[$brew_path_index]
 	path[brew_path_index]=( "/Applications/Araxis Merge.app/Contents/Utilities" $brew_path )
