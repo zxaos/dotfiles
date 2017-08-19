@@ -49,6 +49,9 @@ autoload -Uz compinit && compinit -C -i -d ~/.zcompdump
 # Offer to correct misspellings
 setopt correct
 
+# When misspelling fixes aren't enough
+eval "$(thefuck --alias)"
+
 # Save command history
 HISTFILE=~/.histfile
 HISTSIZE=1000
