@@ -49,6 +49,11 @@ Plug 'ap/vim-css-color'
 " Language : Ansible / YAML
 Plug 'pearofducks/ansible-vim'
 
+" Language : HCL (e.g. terraform)
+" Note that this requires the hclfmt command line utility
+Plug 'fatih/vim-hclfmt'
+Plug 'hashivim/vim-terraform'
+
 " Tool Support
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
