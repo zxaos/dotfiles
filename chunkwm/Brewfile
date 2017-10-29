@@ -1,0 +1,2 @@
+tap "crisidev/homebrew-chunkwm"
+brew "chunkwm"
