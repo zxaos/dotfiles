@@ -13,11 +13,12 @@ brew "tmux"
 cask "1password"
 cask "bartender"
 cask "rocket"
+cask "iterm2"
 
 # Editing
-cask "iterm2"
 brew "macvim", args: ["without-python", "with-python3", "without-cscope", "with-override-system-vim"]
 brew "fzf"
+brew "ripgrep"
 
 # MAS 
 mas "DaisyDisk", id: 411643860
