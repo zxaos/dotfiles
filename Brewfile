@@ -13,6 +13,8 @@ brew "tmux"
 cask "1password"
 cask "bartender"
 cask "rocket"
+cask "dash"
+cask "droplr"
 
 # Editing
 cask "iterm2"
@@ -29,5 +31,7 @@ mas "Tooth Fairy", id: 1191449274
 mas "Trello", id: 1278508951
 
 # Project Tooling
-brew "tfenv"
 cask "aws-vault"
+brew "tfenv"
+cask "tower"
+cask "gitkraken"

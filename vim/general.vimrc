@@ -1,3 +1,8 @@
+" Minimal Configuration
+set nocompatible
+syntax on
+filetype plugin indent on
+
 " Allow setting window title
 set title
 
@@ -6,10 +11,9 @@ if (has("termguicolors"))
  set termguicolors
 endif
 
-" Set default color scheme
-" colorscheme OceanicNext
-" colorscheme base16-default-dark
-" set background=dark
+" Appearance
+"let g:gruvbox_italic=1
+colorscheme gruvbox
 
 " Space instead of \ for leader
 let mapleader = "\<Space>"
@@ -25,8 +29,24 @@ set number
 " Use system clipboard
 " set clipboard=unnamed
 
-" Persist undo between runs
-set undofile
+" Persist undo between runs if the feature is supported.
+" Save the undofiles somewhere less annoying than the current dir.
+if exists("+undofile")
+  if isdirectory($HOME . '/.vim/undo') == 0
+    :silent !mkdir -p ~/.vim/undo > /dev/null 2>&1
+  endif
+  set undodir=~/.vim/undo//
+  set undofile
+endif
+
+" Try to save swaps to somewhere less annoying than the current dir.
+" But fall back to it if we have to
+if isdirectory($HOME . '/.vim/swap') == 0
+  :silent !mkdir -p ~/.vim/swap >/dev/null 2>&1
+endif
+set directory=/.vim/swap//
+set directory+=~/tmp//
+set directory+=.
 
 " More natural splits right/below instead of left/above
 set splitbelow
@@ -44,6 +64,8 @@ nnoremap <C-H> <C-W><C-H>
 " nnoremap <silent> - :exe "resize " . (winheight(0) * 2/3)<CR>
 
 " Update unmodified files when file on disk changes
+" TODO: This is not sufficient for this behaviour, it doesn't pick
+"       up most changes (e.g. terraform fmt)
 set autoread
 
 " Try to improve scrolling performance

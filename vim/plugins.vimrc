@@ -23,13 +23,12 @@ call plug#begin("$HOME/.config/vim/vim-plug-plugins")
 " Plug '~/my-prototype-plugin'
 
 
+" Finding & Navigation
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
-" Color Schemes
-" Plug 'mhartington/oceanic-next'
-" Plug 'chriskempson/base16-vim'
-" Plug 'joshdick/onedark.vim'
+" Appearance
+Plug 'morhetz/gruvbox'
 
 " Code Intelligence
 " Plug 'Shougo/deoplete.nvim'
@@ -56,7 +55,7 @@ Plug 'junegunn/fzf.vim'
 " Language : HCL (e.g. terraform)
 " Note that this requires the hclfmt command line utility
 " Plug 'fatih/vim-hclfmt'
-" Plug 'hashivim/vim-terraform'
+Plug 'hashivim/vim-terraform'
 
 " Tool Support
 " Plug 'tpope/vim-fugitive'

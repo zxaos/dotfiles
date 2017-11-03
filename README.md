@@ -12,7 +12,7 @@ Probably of limited utility to other people.
 * Add fzf support - `/usr/local/opt/fzf/install`
 
 ## Set up Vim
-* get vim-plug
+* get vim-plug https://github.com/junegunn/vim-plug
 * symlink .vimrc into place
 * run `:PlugInstall`
 
