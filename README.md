@@ -9,7 +9,10 @@ Probably of limited utility to other people.
 ## Set up shell
 * add `/usr/local/bin/fish` to `/etc/shells`
 * `chsh -s /usr/local/bin/fish`
-* Add fzf support - `/usr/local/opt/fzf/install`
+* `ln -s fish.config ~/.config/fish/fish.config`
+* `ln -s fishfile ~/.config/fish/fishfile`
+* Install fisher plugins `fisher`
+* Use modern fzf fish mappings: `set -xU FZF_LEGACY_KEYBINDINGS 0`
 
 ## Set up Vim
 * get vim-plug https://github.com/junegunn/vim-plug
