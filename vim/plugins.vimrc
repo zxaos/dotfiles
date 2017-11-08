@@ -24,8 +24,9 @@ call plug#begin("$HOME/.config/vim/vim-plug-plugins")
 
 
 " Finding & Navigation
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim'
+"" dir should match fzf install - this one is homebrew
+Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+Plug 'wesQ3/vim-windowswap'
 
 " Appearance
 Plug 'morhetz/gruvbox'
@@ -37,6 +38,7 @@ Plug 'morhetz/gruvbox'
 " Code Editing Improvements
 " Plug 'tpope/vim-commentary'
 " Plug 'junegunn/vim-easy-align'
+Plug 'sbdchd/neoformat'
 
 " Language : Javascript
 " Plug 'pangloss/vim-javascript'
@@ -58,9 +60,9 @@ Plug 'morhetz/gruvbox'
 Plug 'hashivim/vim-terraform'
 
 " Tool Support
+Plug 'rizzatti/dash.vim'
 " Plug 'tpope/vim-fugitive'
 " Plug 'airblade/vim-gitgutter'
-" Plug 'rizzatti/dash.vim'
 " dir should match fzf install - this one is homebrew
 " Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 " Plug 'tpope/vim-vinegar'

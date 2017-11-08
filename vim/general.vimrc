@@ -23,6 +23,17 @@ endif
 let g:gruvbox_italic=1 
 colorscheme gruvbox
 
+
+" Mouse
+if (has("mouse"))
+  set mouse=a
+  if (has("mouse_sgr"))
+    set ttymouse=sgr
+  else
+    set ttymouse=xterm2
+  endif
+endif
+
 " Space instead of \ for leader
 let mapleader = "\<Space>"
 
@@ -66,11 +77,6 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" Set minimum split size and improv split handling
-" set winminheight=5
-" nnoremap <silent> + :exe "resize " . (winheight(0) * 3/2)<CR>
-" nnoremap <silent> - :exe "resize " . (winheight(0) * 2/3)<CR>
-
 " Update unmodified files when file on disk changes
 " TODO: This is not sufficient for this behaviour, it doesn't pick
 "       up most changes (e.g. terraform fmt)
@@ -78,3 +84,11 @@ set autoread
 
 " Try to improve scrolling performance
 " set lazyredraw
+
+" Tweaks to netrw
+" Use tree mode
+let g:netrw_liststyle = 3
+nmap <Leader>x :Explore<CR>
+nmap <Leader>X :Lexplore<CR>
+nmap <Leader>c :Vexplore<CR>
+nmap <Leader>C :Sexplore<CR>
