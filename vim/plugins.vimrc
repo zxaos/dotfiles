@@ -25,8 +25,12 @@ call plug#begin("$HOME/.config/vim/vim-plug-plugins")
 
 " Finding & Navigation
 "" dir should match fzf install - this one is homebrew
+"" ctrl t f r ; to find files and buffers
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+"" leader + ww to swap splits
 Plug 'wesQ3/vim-windowswap'
+"" Unify shortcuts to move between tmux and vim splits with C - <direction>
+Plug 'christoomey/vim-tmux-navigator'
 
 " Appearance
 Plug 'morhetz/gruvbox'

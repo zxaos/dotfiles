@@ -71,12 +71,6 @@ set directory+=.
 set splitbelow
 set splitright
 
-" Better window shorcuts
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-
 " Update unmodified files when file on disk changes
 " TODO: This is not sufficient for this behaviour, it doesn't pick
 "       up most changes (e.g. terraform fmt)
