@@ -24,8 +24,13 @@ call plug#begin("$HOME/.config/vim/vim-plug-plugins")
 
 
 " Finding & Navigation
-Plug '/usr/local/opt/fzf'
-Plug 'junegunn/fzf.vim'
+"" dir should match fzf install - this one is homebrew
+"" ctrl t f r ; to find files and buffers
+Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+"" leader + ww to swap splits
+Plug 'wesQ3/vim-windowswap'
+"" Unify shortcuts to move between tmux and vim splits with C - <direction>
+Plug 'christoomey/vim-tmux-navigator'
 
 " Appearance
 Plug 'morhetz/gruvbox'
@@ -37,6 +42,7 @@ Plug 'morhetz/gruvbox'
 " Code Editing Improvements
 " Plug 'tpope/vim-commentary'
 " Plug 'junegunn/vim-easy-align'
+Plug 'sbdchd/neoformat'
 
 " Language : Javascript
 " Plug 'pangloss/vim-javascript'
@@ -58,9 +64,9 @@ Plug 'morhetz/gruvbox'
 Plug 'hashivim/vim-terraform'
 
 " Tool Support
+Plug 'rizzatti/dash.vim'
 " Plug 'tpope/vim-fugitive'
 " Plug 'airblade/vim-gitgutter'
-" Plug 'rizzatti/dash.vim'
 " dir should match fzf install - this one is homebrew
 " Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 " Plug 'tpope/vim-vinegar'

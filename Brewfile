@@ -7,6 +7,8 @@ brew "mas"
 
 # Basic Shell Setup
 brew "fish"
+tap "fisherman/tap"
+brew "fisherman"
 brew "tmux"
 
 # General
