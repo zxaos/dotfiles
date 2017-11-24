@@ -32,6 +32,7 @@ cask "kaleidoscope"
 # MAS 
 mas "DaisyDisk", id: 411643860
 mas "Deliveries", id: 924726344
+mas "Patterns", id: 429449079
 mas "Shush", id: 496437906
 mas "Slack", id: 803453959
 mas "Things3", id: 904280696
