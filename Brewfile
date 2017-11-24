@@ -24,6 +24,11 @@ brew "macvim", args: ["without-python", "with-python3", "without-cscope", "with-
 brew "fzf"
 brew "ripgrep"
 
+# Developer Tooling
+cask "tower"
+cask "gitkraken"
+cask "kaleidoscope"
+
 # MAS 
 mas "DaisyDisk", id: 411643860
 mas "Deliveries", id: 924726344
@@ -36,5 +41,4 @@ mas "Trello", id: 1278508951
 # Project Tooling
 cask "aws-vault"
 brew "tfenv"
-cask "tower"
-cask "gitkraken"
+brew "docker-completion"
