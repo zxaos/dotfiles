@@ -22,3 +22,6 @@ Probably of limited utility to other people.
 ## Configure Git
 * `git config --global core.excludesfile '~/path/to/dotfiles/gitignore_global'`
 * `git config --global rebase.autosquash true`
+
+## Manually install extras
+* docker-compose completion - download from https://raw.githubusercontent.com/docker/compose/master/contrib/completion/fish/docker-compose.fish , place in /usr/local/share/fish/vendor_completions.d
