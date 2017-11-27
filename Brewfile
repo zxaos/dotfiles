@@ -33,6 +33,7 @@ mas "Slack", id: 803453959
 mas "Things3", id: 904280696
 mas "Tooth Fairy", id: 1191449274
 mas "Trello", id: 1278508951
+mas "Wimoweh", id: 610341008
 
 # Project Tooling
 cask "aws-vault"
