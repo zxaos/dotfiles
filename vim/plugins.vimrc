@@ -31,6 +31,7 @@ Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'wesQ3/vim-windowswap'
 "" Unify shortcuts to move between tmux and vim splits with C - <direction>
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'ap/vim-buftabline'
 
 " Appearance
 Plug 'morhetz/gruvbox'
