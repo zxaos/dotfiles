@@ -66,8 +66,8 @@ Plug 'hashivim/vim-terraform'
 
 " Tool Support
 Plug 'rizzatti/dash.vim'
+Plug 'airblade/vim-gitgutter'
 " Plug 'tpope/vim-fugitive'
-" Plug 'airblade/vim-gitgutter'
 " dir should match fzf install - this one is homebrew
 " Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 " Plug 'tpope/vim-vinegar'
