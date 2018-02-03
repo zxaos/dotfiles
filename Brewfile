@@ -20,7 +20,6 @@ cask "droplr"
 cask "iterm2"
 
 # Editing
-brew "macvim", args: ["without-python", "with-python3", "without-cscope", "with-override-system-vim"]
 brew "fzf"
 brew "ripgrep"
 
