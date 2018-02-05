@@ -2,7 +2,7 @@ if exists('*minpac#init')
   " minpac is loaded.
   call minpac#init()
   call minpac#add('k-takata/minpac', {'type': 'opt'})
-
+  call minpac#add('ajmwagar/vim-deus')
   " Additional plugins here.
   "call minpac#add('vim-jp/syntax-vim-ex')
   "...
