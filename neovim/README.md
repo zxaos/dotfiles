@@ -6,3 +6,6 @@ pyenv virtualenv (cat .python-version) py3neovim
 pyenv activate py3neovim
 pip install -r requirements.txt
 pyenv which python  # Note the path, ensure g:python_host_prog in vim config matches
+
+git clone https://github.com/k-takata/minpac.git ~/.config/nvim/pack/minpac/opt/minpac
+// minpac manages itself, but this is required to bootstrap it for first load
