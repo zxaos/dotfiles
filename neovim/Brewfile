@@ -4,5 +4,6 @@ brew "pyenv"
 brew "pyenv-virtualenv"
 
 brew "fzf"
+brew "ripgrep"
 
 cask "vimr"
