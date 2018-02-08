@@ -1,5 +1,3 @@
-
-
 if status --is-login
     set -x PYENV_ROOT "$HOME/.pyenv"
     set -x PATH $PYENV_ROOT/shims $PYENV_ROOT/bin $PATH
@@ -17,3 +15,5 @@ source /usr/local/share/chruby/chruby.fish
 source /usr/local/share/chruby/auto.fish
 
 test -e /usr/local/bin/rg; and set -x FZF_DEFAULT_COMMAND 'rg --files'
+
+alias vim="nvim"
