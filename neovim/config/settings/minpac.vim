@@ -7,11 +7,12 @@ if exists('*minpac#init')
   call minpac#add('ajmwagar/vim-deus')
 
   " Navigation
-  call minpac#add('tpope/vim-projectionist')
+  call minpac#add('tpope/vim-projectionist') " per-project file and alternate navigation
 
   " Syntax
   call minpac#add('hashivim/vim-terraform')
-
+  call minpac#add('stephpy/vim-yaml') " Faster YAML syntax than core
+  call minpac#add('pearofducks/ansible-vim', {'branch': 'v2'}) " See https://git.io/vAmQa the V2 specifier can be removed near the end of March 2018
 endif
 
 " Define user commands for updating/cleaning the plugins.
