@@ -30,6 +30,15 @@ function! SwitchToLayout(type)
     noremap H Y
     noremap Y H
 
+    " Change splits to use the new navigation keys
+    nnoremap <silent> <C-W><C-O> <C-W><C-L>
+    nnoremap <silent> <C-W><C-N> <C-W><C-J>
+    nnoremap <silent> <C-W><C-E> <C-W><C-K>
+    nnoremap <silent> <C-W><C-Y> <C-W><C-H>
+
+    " see settings/fzf.vim
+    nnoremap <silent> <C-P> :<C-U>FZF --bind=ctrl-n:down,ctrl-e:up<CR>
+
   else " QWERTY
     silent! unmap l
     silent! unmap o
@@ -47,14 +56,22 @@ function! SwitchToLayout(type)
     silent! unmap y
     silent! unmap H
     silent! unmap Y
+
+    silent! nunmap <C-W><C-O>
+    silent! nunmap <C-W><C-N>
+    silent! nunmap <C-W><C-E>
+    silent! nunmap <C-W><C-Y>
+
+    " see settings/fzf.vim
+    nnoremap <C-p> :<C-u>FZF<CR>
   endif
 endfunction
 
 " The first time this is sourced at startup, switch to workman layout
-if !exists("init_keyboard_loaded")
-	let init_keyboard_loaded = 1
+augroup init_keyboard
+	au!
 	autocmd VimEnter * call SwitchToLayout("workman")
-endif
+augroup end
 
 :command! Qwerty  call SwitchToLayout("qwerty")
 :command! Workman call SwitchToLayout("workman")

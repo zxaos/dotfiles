@@ -5,3 +5,5 @@ set rtp+=/usr/local/opt/fzf
 
 " bind to Ctrl-P
 nnoremap <C-p> :<C-u>FZF<CR>
+
+" see also rebinds in workman.vim
