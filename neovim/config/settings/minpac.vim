@@ -13,6 +13,15 @@ if exists('*minpac#init')
   call minpac#add('hashivim/vim-terraform')
   call minpac#add('stephpy/vim-yaml') " Faster YAML syntax than core
   call minpac#add('pearofducks/ansible-vim', {'branch': 'v2'}) " See https://git.io/vAmQa the V2 specifier can be removed near the end of March 2018
+
+  " Compling & Linting
+  call minpac#add('tpope/vim-dispatch')
+  call minpac#add('radenling/vim-dispatch-neovim')
+  " call minpac#add('w0rp/ale')
+
+  " Source Control
+  call minpac#add('tpope/vim-fugitive')
+  call minpac#add('airblade/vim-gitgutter')
 endif
 
 " Define user commands for updating/cleaning the plugins.
