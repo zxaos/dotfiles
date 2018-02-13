@@ -13,7 +13,8 @@ Probably of limited utility to other people.
 * `ln -s fishfile ~/.config/fish/fishfile`
 * Install fisher plugins `fisher`
 * Use modern fzf fish mappings: `set -xU FZF_LEGACY_KEYBINDINGS 0`
-
+* If relevant, add iterm2 prompt to correct spot in fish prompt
+  * e.g. `set prompt $prompt (iterm2_prompt_mark) "$color_symbol$pure_symbol_prompt$pure_color_normal "`
 ## Set up Vim
 * get vim-plug https://github.com/junegunn/vim-plug
 * symlink .vimrc into place
