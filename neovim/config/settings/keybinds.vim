@@ -3,3 +3,6 @@ map <Space> <Leader>
 
 " Greatly improve buffer navigation
 nnoremap gb :ls<CR>:buffer<Space>
+
+" Quick-reload settings files
+command! Vimrc source $MYVIMRC
