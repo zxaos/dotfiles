@@ -8,6 +8,8 @@ if exists('*minpac#init')
 
   " Navigation
   call minpac#add('tpope/vim-projectionist') " per-project file and alternate navigation
+  call minpac#add('mhinz/vim-grepper') " Async Grepper
+  call minpac#add('zefei/vim-wintabs') " Per-window buffer manager
 
   " Syntax
   call minpac#add('hashivim/vim-terraform')

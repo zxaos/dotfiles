@@ -1,5 +1,5 @@
 " Enable "True Colour" support.
-if (has("termguicolors"))
+if has("termguicolors")
  set termguicolors
  " vim only sets the 24-bit color mode on terminals like xterm by default
  " set the escape sequence for additional $TERMs tmux-256color to enable
@@ -16,6 +16,10 @@ endif
 set background=dark " Setting dark mode
 colorscheme deus
 let g:deus_termcolors=256
+
+if has("mouse")
+ set mouse=a
+endif
 
 " See also GUI-specific files:
 " * vimr.vim

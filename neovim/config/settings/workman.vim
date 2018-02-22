@@ -36,6 +36,12 @@ function! SwitchToLayout(type)
     nnoremap <silent> <C-W><C-E> <C-W><C-K>
     nnoremap <silent> <C-W><C-Y> <C-W><C-H>
 
+    " Provide easier split navigation
+    "nnoremap <silent> <S-Down> <C-W><C-J>
+    "nnoremap <silent> <S-Up> <C-W><C-K>
+    "nnoremap <silent> <S-Right> <C-W><C-L>
+    "nnoremap <silent> <S-Left> <C-W><C-H>
+
     " see settings/fzf.vim
     nnoremap <silent> <C-P> :<C-U>FZF --bind=ctrl-n:down,ctrl-e:up<CR>
 
@@ -61,6 +67,12 @@ function! SwitchToLayout(type)
     silent! nunmap <C-W><C-N>
     silent! nunmap <C-W><C-E>
     silent! nunmap <C-W><C-Y>
+
+    " Better split navigation
+    "nnoremap <silent> <C-J> <C-W><C-J>
+    "nnoremap <silent> <C-K> <C-W><C-K>
+    "nnoremap <silent> <C-L> <C-W><C-L>
+    "nnoremap <silent> <BS> <C-W><C-H> "Fixes a bug where H was being interpreted as backspace
 
     " see settings/fzf.vim
     nnoremap <C-p> :<C-u>FZF<CR>
