@@ -53,7 +53,7 @@ function! SwitchToLayout(type)
      let fugitive_map_save = maparg('y<C-G>', 'n', 0, 1)
      let fugitive_map_save = substitute(fugitive_map_save.rhs, '<SID>', '<SNR>' . fugitive_map_save.sid . '_', 'g')
      exe 'nnoremap <buffer> <silent> h<C-G> ' . fugitive_map_save
-     nunmap <buffer> y<C-G>
+     nunmap <buffer> <silent> y<C-G>
     endif
 "
   else " QWERTY
