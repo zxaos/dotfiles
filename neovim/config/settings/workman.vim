@@ -36,6 +36,7 @@ function! SwitchToLayout(type)
     nnoremap <silent> <C-W><C-E> <C-W><C-K>
     nnoremap <silent> <C-W><C-Y> <C-W><C-H>
 
+    " NB: ZoomWinTab added so that accidental :only via <C-W>O can be reverted
     " Provide easier split navigation
     "nnoremap <silent> <S-Down> <C-W><C-J>
     "nnoremap <silent> <S-Up> <C-W><C-K>
