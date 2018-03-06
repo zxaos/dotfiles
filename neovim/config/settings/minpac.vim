@@ -9,7 +9,7 @@ if exists('*minpac#init')
   " Navigation
   call minpac#add('tpope/vim-projectionist') " per-project file and alternate navigation
   call minpac#add('mhinz/vim-grepper') " Async Grepper
-  call minpac#add('zefei/vim-wintabs') " Per-window buffer manager
+
   " UI and Window Management
   call minpac#add('troydm/zoomwintab.vim')
 
@@ -18,7 +18,7 @@ if exists('*minpac#init')
   call minpac#add('stephpy/vim-yaml') " Faster YAML syntax than core
   call minpac#add('pearofducks/ansible-vim', {'branch': 'v2'}) " See https://git.io/vAmQa the V2 specifier can be removed near the end of March 2018
 
-  " Compling & Linting
+  " Compiling & Linting
   call minpac#add('tpope/vim-dispatch')
   call minpac#add('radenling/vim-dispatch-neovim')
   " call minpac#add('w0rp/ale')
