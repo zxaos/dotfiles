@@ -46,6 +46,16 @@ function! SwitchToLayout(type)
     " see settings/fzf.vim
     nnoremap <silent> <C-P> :<C-U>FZF --bind=ctrl-n:down,ctrl-e:up<CR>
 
+    " remap vim-fugitive's y<C-G> if it exists. Otherwise there's lag when
+    " moving the cursor left due to the existing 'y' remapping
+    " see https://github.com/tpope/vim-fugitive/issues/761 https://vi.stackexchange.com/questions/7734/how-to-save-and-restore-a-mapping
+    if !empty(maparg('y<C-G>', 'n'))
+     let fugitive_map_save = maparg('y<C-G>', 'n', 0, 1)
+     let fugitive_map_save = substitute(fugitive_map_save.rhs, '<SID>', '<SNR>' . fugitive_map_save.sid . '_', 'g')
+     exe 'nnoremap <buffer> <silent> h<C-G> ' . fugitive_map_save
+     nunmap <buffer> y<C-G>
+    endif
+"
   else " QWERTY
     silent! unmap l
     silent! unmap o
@@ -77,6 +87,8 @@ function! SwitchToLayout(type)
 
     " see settings/fzf.vim
     nnoremap <C-p> :<C-u>FZF<CR>
+
+    " TODO: reverese the fugitive_map_save workaround
   endif
 endfunction
 
