@@ -12,11 +12,12 @@ let g:ruby_host_prog = 'chruby 2.5.0; and neovim-ruby-host' " Use a chruby env
 " ======================== Source Settings ========================
 " Settings are stored in seperate files and then sourced
 
-exe 'source' g:VIMCONFIG . '/settings/minpac.vim'
-" exe 'source' '~/.vim/settings/settings.vim'
-for fpath in split(globpath(g:VIMCONFIG . '/settings', '*.vim'), '\n')
- if (fpath != 'settings' && fpath != 'minpac')
-   exe 'source' fpath
- endif
+for fpath in globpath(g:VIMCONFIG . '/settings/before', '*.vim', 0, 1 )
+ exe 'source' fpath
 endfor
 
+for fpath in globpath(g:VIMCONFIG . '/settings', '*.vim', 0, 1)
+  exe 'source' fpath
+endfor
+
+" for "after", use after/plugins/foo.vim

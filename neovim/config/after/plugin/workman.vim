@@ -7,6 +7,10 @@
 " * https://axiomatic.neophilus.net/posts/2013-08-13-workman-layout-for-vim.html
 " * https://github.com/kennykaye/dotfiles/blob/master/vim/settings/keyboard-layouts.vim
 
+" To allow this to rebind mappings from plugins, it must be loaded after they
+" are, so must be in after/plugin instead of just a settings file we load in
+" the regular way.
+
 function! SwitchToLayout(type)
   if a:type == "workman"
     "(O)pen line -> (L)ine
