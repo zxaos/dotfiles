@@ -16,6 +16,7 @@ endif
 set background=dark " Setting dark mode
 colorscheme deus
 let g:deus_termcolors=256
+let g:airline_theme='deus'
 
 if has("mouse")
  set mouse=a

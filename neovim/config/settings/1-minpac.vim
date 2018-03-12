@@ -13,6 +13,10 @@ if exists('*minpac#init')
 
   " UI and Window Management
   call minpac#add('troydm/zoomwintab.vim')
+  call minpac#add('ryanoasis/vim-devicons')
+  call minpac#add('bagrat/vim-workspace')
+  call minpac#add('vim-airline/vim-airline')
+  call minpac#add('vim-airline/vim-airline-themes')
 
   " Syntax
   call minpac#add('hashivim/vim-terraform')
