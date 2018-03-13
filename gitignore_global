@@ -8,3 +8,4 @@ Thumbs.db
 *.sw?
 *.sublime-workspace
 .idea
+Session.vim
