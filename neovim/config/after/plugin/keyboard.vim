@@ -47,6 +47,17 @@ function! SwitchToLayout(type)
     "nnoremap <silent> <S-Right> <C-W><C-L>
     "nnoremap <silent> <S-Left> <C-W><C-H>
 
+    "Better split navigation (map workman)
+    map <C-y> <C-w>h
+    map <C-n> <C-w>j
+    map <C-e> <C-w>k
+    map <C-o> <C-w>l
+    "Better split navigation (unmap Qwerty)
+    unmap <C-h>
+    unmap <C-j>
+    unmap <C-k>
+    unmap <C-l>
+
     " see settings/fzf.vim
     nnoremap <silent> <C-P> :<C-U>FZF --bind=ctrl-n:down,ctrl-e:up<CR>
 
@@ -89,6 +100,18 @@ function! SwitchToLayout(type)
     "nnoremap <silent> <C-L> <C-W><C-L>
     "nnoremap <silent> <BS> <C-W><C-H> "Fixes a bug where H was being interpreted as backspace
 
+    "Better split navigation (unmap workman)
+    unmap <C-y>
+    unmap <C-n>
+    unmap <C-e>
+    unmap <C-o>
+
+    "Better split navigation (map qwerty)
+    map <C-h> <C-w>h
+    map <C-j> <C-w>j
+    map <C-k> <C-w>k
+    map <C-l> <C-w>l
+
     " see settings/fzf.vim
     nnoremap <C-p> :<C-u>FZF<CR>
 
@@ -98,10 +121,11 @@ endfunction
 
 " The first time this is sourced at startup, switch to workman layout
 augroup init_keyboard
-	au!
-	autocmd VimEnter * call SwitchToLayout("workman")
+  au!
+  if $KBL != "QWERTY"
+    autocmd VimEnter * call SwitchToLayout("workman")
+  endif
 augroup end
 
 :command! Qwerty  call SwitchToLayout("qwerty")
 :command! Workman call SwitchToLayout("workman")
-
