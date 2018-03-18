@@ -1,4 +1,4 @@
-if exists('*minpac#init')
+ if exists('*minpac#init')
   " minpac is loaded.
   call minpac#init()
   call minpac#add('k-takata/minpac', {'type': 'opt'})
@@ -14,7 +14,6 @@ if exists('*minpac#init')
   " UI and Window Management
   call minpac#add('troydm/zoomwintab.vim')
   call minpac#add('ryanoasis/vim-devicons')
-  call minpac#add('vim-ctrlspace/vim-ctrlspace')
   call minpac#add('vim-airline/vim-airline')
   call minpac#add('vim-airline/vim-airline-themes')
 
