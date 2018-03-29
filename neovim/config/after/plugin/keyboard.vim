@@ -53,10 +53,10 @@ function! SwitchToLayout(type)
     map <C-e> <C-w>k
     map <C-o> <C-w>l
     "Better split navigation (unmap Qwerty)
-    unmap <C-h>
-    unmap <C-j>
-    unmap <C-k>
-    unmap <C-l>
+    silent! unmap <C-h>
+    silent! unmap <C-j>
+    silent! unmap <C-k>
+    silent! unmap <C-l>
 
     " see settings/fzf.vim
     nnoremap <silent> <C-P> :<C-U>FZF --bind=ctrl-n:down,ctrl-e:up<CR>
