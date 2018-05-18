@@ -17,3 +17,5 @@ source /usr/local/share/chruby/auto.fish
 test -e /usr/local/bin/rg; and set -x FZF_DEFAULT_COMMAND 'rg --files'
 
 alias vim="nvim"
+export VISUAL="nvim"
+export EDITOR="nvim"
