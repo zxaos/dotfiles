@@ -14,6 +14,8 @@ status --is-interactive; and source (nodenv init -|psub)
 source /usr/local/share/chruby/chruby.fish
 source /usr/local/share/chruby/auto.fish
 
+source /usr/local/opt/asdf/asdf.fish
+
 test -e /usr/local/bin/rg; and set -x FZF_DEFAULT_COMMAND 'rg --files'
 
 alias vim="nvim"
