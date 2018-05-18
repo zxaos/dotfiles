@@ -25,7 +25,7 @@
   " Compiling & Linting
   call minpac#add('tpope/vim-dispatch')
   call minpac#add('radenling/vim-dispatch-neovim')
-  " call minpac#add('w0rp/ale')
+  call minpac#add('w0rp/ale')
 
   " Source Control
   call minpac#add('tpope/vim-fugitive')
