@@ -26,3 +26,8 @@ Probably of limited utility to other people.
 
 ## Manually install extras
 * docker-compose completion - download from https://raw.githubusercontent.com/docker/compose/master/contrib/completion/fish/docker-compose.fish , place in /usr/local/share/fish/vendor_completions.d
+
+### New stuff
+* Use stow
+* cd zsh
+* stow -t ~ zsh
