@@ -29,3 +29,4 @@ nvim/vim-plug-plugins
 # Generated tmuxline configuration
 tmux/tmuxline.conf
 /neovim/config/pack
+.zcompdump

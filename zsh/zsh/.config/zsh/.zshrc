@@ -1,14 +1,23 @@
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.zsh/histfile
+HISTFILE=${HISTFILE:=${XDG_DATA_HOME}/zsh/histfile}
 HISTSIZE=1000
 SAVEHIST=1000
 setopt appendhistory nomatch
 bindkey -v
 # End of lines configured by zsh-newuser-install
+
 # The following lines were added by compinstall
-zstyle :compinstall filename "~/.zshrc"
+zstyle :compinstall filename "~/${ZDOTDIR}/.zshrc"
 
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+plugins=(git vi-mode)
+for file in ${ZDOTDIR}/autoload-settings/**/*(.); do
+	echo "sourcing $file"
+	source "$file"
+done
+#[ -f ${ZDOTDIR}/.zplug ] && source ${ZDOTDIR}/.zplug

@@ -1,5 +1,6 @@
 {
-  "Working Directory" : "\/Users\/zxaos",
+  "Profiles": [
+{
   "Prompt Before Closing 2" : false,
   "Selected Text Color" : {
     "Green Component" : 0.56231993436813354,
@@ -317,7 +318,7 @@
   "Session Close Undo Timeout" : 60,
   "Blur" : true,
   "Vertical Spacing" : 1,
-  "Normal Font" : "PragmataPro 12",
+  "Normal Font" : "PragmataPro 16",
   "AWDS Pane Directory" : "",
   "Disable Printing" : true,
   "Ansi 7 Color" : {
@@ -368,4 +369,6 @@
     "Blue Component" : 0.098039215686274508
   },
   "Custom Directory" : "Advanced"
+}
+]
 }
