@@ -2,6 +2,9 @@
 https://github.com/morhetz/gruvbox-contrib/tree/master/iterm2
 using commit bb665ee from Dec 22, 2016
 
+# Simple
+* move iterm2 to ~/.terminfo/69/iterm2 and set TERM to iterm2
+
 # Italics
 * run tic xterm-256color-italic.terminfo
 * ensure iterm uses this new $TERM (profiles -> terminal)
