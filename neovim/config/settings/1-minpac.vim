@@ -23,9 +23,10 @@
   call minpac#add('pearofducks/ansible-vim', {'branch': 'v2'}) " See https://git.io/vAmQa the V2 specifier can be removed near the end of March 2018
 
   " Compiling & Linting
-  call minpac#add('tpope/vim-dispatch')
-  call minpac#add('radenling/vim-dispatch-neovim')
   call minpac#add('w0rp/ale')
+  " Disabled due to low use and 'y' binding lag
+  " call minpac#add('tpope/vim-dispatch')
+  " call minpac#add('radenling/vim-dispatch-neovim')
 
   " Source Control
   call minpac#add('tpope/vim-fugitive')
