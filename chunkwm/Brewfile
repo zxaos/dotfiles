@@ -1,2 +1,3 @@
 tap "crisidev/homebrew-chunkwm"
 brew "chunkwm"
+brew "koekeishiya/formulae/skhd"
