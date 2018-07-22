@@ -5,7 +5,7 @@ hs.hotkey.bind(hyper, "H", function()
   hs.reload()
 end)
 
--[[
+--[[
 hs.hotkey.bind(meh, "W", function()
   hs.alert.show("Hello World!", chunkHotkeyConfirmationStyle)
 end)

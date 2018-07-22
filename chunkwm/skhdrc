@@ -84,8 +84,8 @@ alt - n : chunkc tiling::window --focus south && open -g 'hammerspoon://chunkEve
 alt - e : chunkc tiling::window --focus north && open -g 'hammerspoon://chunkEvent?m=tiling::window&t=focus north'
 alt - o : chunkc tiling::window --focus east && open -g 'hammerspoon://chunkEvent?m=tiling::window&t=focus east'
 
-# cmd - n : chunkc tiling::window --focus prev
-# cmd - e : chunkc tiling::window --focus next
+alt - p : chunkc tiling::window --focus prev && open -g 'hammerspoon://chunkEvent?m=tiling::window&t=focus prev'
+alt - 0x29 : chunkc tiling::window --focus next && open -g 'hammerspoon://chunkEvent?m=tiling::window&t=focus next' # ;
 
 # equalize size of windows
 shift + alt - 0 : chunkc tiling::desktop --equalize && open -g 'hammerspoon://chunkEvent?m=tiling::desktop&t=equalize'
@@ -97,11 +97,10 @@ shift + alt - e : chunkc tiling::window --swap north && open -g 'hammerspoon://c
 shift + alt - o : chunkc tiling::window --swap east && open -g 'hammerspoon://chunkEvent?m=tiling::window&t=swap east'
 
 # move window
-# TODO: Can't trigger modifiers in LH only - (cmd + shift is  opposite sides of the board)
-shift + cmd - y : chunkc tiling::window --warp west && open -g 'hammerspoon://chunkEvent?m=tiling::window&t=warp west'
-shift + cmd - n : chunkc tiling::window --warp south && open -g 'hammerspoon://chunkEvent?m=tiling::window&t=warp south'
-shift + cmd - e : chunkc tiling::window --warp north && open -g 'hammerspoon://chunkEvent?m=tiling::window&t=warp north'
-shift + cmd - o : chunkc tiling::window --warp east && open -g 'hammerspoon://chunkEvent?m=tiling::window&t=warp east'
+shift + alt - l : chunkc tiling::window --warp west && open -g 'hammerspoon://chunkEvent?m=tiling::window&t=warp west'
+shift + alt - 0x2B : chunkc tiling::window --warp south && open -g 'hammerspoon://chunkEvent?m=tiling::window&t=warp south' # ,
+shift + alt - 0x2F : chunkc tiling::window --warp north && open -g 'hammerspoon://chunkEvent?m=tiling::window&t=warp north' # .
+shift + alt - 0x2C : chunkc tiling::window --warp east && open -g 'hammerspoon://chunkEvent?m=tiling::window&t=warp east'   # /
 
 # make floating window fill screen
 shift + alt - up     : chunkc tiling::window --grid-layout 1:1:0:0:1:1 && open -g 'hammerspoon://chunkEvent?m=tiling::window&t=float fill'
