@@ -7,6 +7,7 @@
   call minpac#add('ajmwagar/vim-deus')
 
   " Navigation
+  call minpac#add('junegunn/fzf.vim') " vim bindings for fzf
   call minpac#add('tpope/vim-projectionist') " per-project file and alternate navigation
   call minpac#add('tpope/vim-vinegar') " make netrw more usable
   call minpac#add('mhinz/vim-grepper') " Async Grepper

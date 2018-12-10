@@ -58,8 +58,8 @@ function! SwitchToLayout(type)
     silent! unmap <C-k>
     silent! unmap <C-l>
 
-    " see settings/fzf.vim
-    nnoremap <silent> <C-P> :<C-U>FZF --bind=ctrl-n:down,ctrl-e:up<CR>
+    " see also settings/fzf.vim
+    let $FZF_DEFAULT_OPTS='--bind ctrl-n:down,ctrl-e:up'
 
     " remap vim-fugitive's y<C-G> if it exists. Otherwise there's lag when
     " moving the cursor left due to the existing 'y' remapping
@@ -112,8 +112,8 @@ function! SwitchToLayout(type)
     map <C-k> <C-w>k
     map <C-l> <C-w>l
 
-    " see settings/fzf.vim
-    nnoremap <C-p> :<C-u>FZF<CR>
+    " see also settings/fzf.vim
+    let $FZF_DEFAULT_OPTS=''
 
     " TODO: reverese the fugitive_map_save workaround
   endif
