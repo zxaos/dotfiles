@@ -27,6 +27,10 @@ brew "ripgrep"
 cask "tower"
 cask "gitkraken"
 cask "kaleidoscope"
+cask "qlmarkdown"
+cask "quicklook-json"
+cask "qlstephen"
+# See https://github.com/sindresorhus/quick-look-plugins for more
 
 # MAS 
 mas "DaisyDisk", id: 411643860
