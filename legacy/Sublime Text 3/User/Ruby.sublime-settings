@@ -1,8 +1,0 @@
-{
-	"extensions":
-	[
-		"Gemfile",
-    "Vagrantfile",
-    "rb"
-	]
-}

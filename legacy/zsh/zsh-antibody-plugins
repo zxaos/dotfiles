@@ -1,6 +1,0 @@
-# Let zsh run async jobs
-antibody bundle mafredri/zsh-async
-# Load Pure theme
-antibody bundle sindresorhus/pure
-# Load syntax highlighting. WARNING: must be loaded last in zshrc
-antibody bundle zsh-users/zsh-syntax-highlighting
