@@ -5,9 +5,12 @@ let g:VIMCONFIG = expand('~/.config/nvim')
 
 " ===================== Provider Configuratons ===================
 
+" let g:loaded_python_provider = 1  " Skip Python2 provider
+" let g:ruby_host_prog = 'chruby 2.5.0; and neovim-ruby-host' " Use a chruby env
+"
+" Point to the Python executables in `asdf` {{{2
 let g:loaded_python_provider = 1  " Skip Python2 provider
-let g:python3_host_prog = expand('~/.pyenv/versions/py3neovim/bin/python') " Use a python3 virtuanenv
-let g:ruby_host_prog = 'chruby 2.5.0; and neovim-ruby-host' " Use a chruby env
+let g:python3_host_prog = expand('~/Developer/dotfiles/neovim/venv3/bin/python')
 
 " ======================== Source Settings ========================
 " Settings are stored in seperate files and then sourced

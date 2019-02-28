@@ -8,6 +8,7 @@ Brewfile
 # Neovim
 *.swp
 *~
+neovim/config/pack/minpac/
 
 ## file browser
 .netrwhist

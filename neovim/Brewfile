@@ -1,8 +1,5 @@
 brew "neovim"
 
-brew "pyenv"
-brew "pyenv-virtualenv"
-
 brew "fzf"
 brew "ripgrep"
 

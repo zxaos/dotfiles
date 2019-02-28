@@ -20,8 +20,9 @@
 
   " Syntax
   call minpac#add('hashivim/vim-terraform')
+  call minpac#add('pearofducks/ansible-vim') 
   call minpac#add('stephpy/vim-yaml') " Faster YAML syntax than core
-  call minpac#add('pearofducks/ansible-vim', {'branch': 'v2'}) " See https://git.io/vAmQa the V2 specifier can be removed near the end of March 2018
+  call minpac#add('cespare/vim-toml')
 
   " Compiling & Linting
   call minpac#add('w0rp/ale')
