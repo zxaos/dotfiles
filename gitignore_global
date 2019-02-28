@@ -9,3 +9,4 @@ Thumbs.db
 *.sublime-workspace
 .idea
 Session.vim
+.node-version
