@@ -1,5 +1,3 @@
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # Lines configured by zsh-newuser-install
 HISTFILE=${HISTFILE:=${XDG_DATA_HOME}/zsh/histfile}
 HISTSIZE=1000
@@ -20,4 +18,3 @@ for file in ${ZDOTDIR}/autoload-settings/**/*(.); do
 	echo "sourcing $file"
 	source "$file"
 done
-#[ -f ${ZDOTDIR}/.zplug ] && source ${ZDOTDIR}/.zplug
