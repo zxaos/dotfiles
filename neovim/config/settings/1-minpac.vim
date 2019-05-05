@@ -20,9 +20,10 @@
 
   " Syntax
   call minpac#add('hashivim/vim-terraform')
-  call minpac#add('pearofducks/ansible-vim') 
+  call minpac#add('pearofducks/ansible-vim')
   call minpac#add('stephpy/vim-yaml') " Faster YAML syntax than core
   call minpac#add('cespare/vim-toml')
+  call minpac#add('pangloss/vim-javascript') " Needed for js syntax folding
 
   " Compiling & Linting
   call minpac#add('w0rp/ale')
