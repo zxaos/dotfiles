@@ -9,6 +9,7 @@ Brewfile
 *.swp
 *~
 neovim/config/pack/minpac/
+neovim/node_modules/
 
 ## file browser
 .netrwhist
