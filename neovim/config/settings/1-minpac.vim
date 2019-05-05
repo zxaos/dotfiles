@@ -25,8 +25,9 @@
   call minpac#add('cespare/vim-toml')
   call minpac#add('pangloss/vim-javascript') " Needed for js syntax folding
 
-  " Compiling & Linting
+  " Compiling, Linting, & Testing
   call minpac#add('w0rp/ale')
+  call minpac#add('janko-m/vim-test')
   " Disabled due to low use and 'y' binding lag
   " call minpac#add('tpope/vim-dispatch')
   " call minpac#add('radenling/vim-dispatch-neovim')
