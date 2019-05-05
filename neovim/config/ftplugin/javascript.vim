@@ -6,6 +6,6 @@ setlocal shiftwidth=0
 setlocal textwidth=90
 setlocal colorcolumn=80
 
-let b:ale_linters = ['eslint']
-let b:ale_fixers = ['remove_trailing_lines', 'trim_whitespace', 'eslint', 'prettier']
+let b:ale_linters = ['standard']
+let b:ale_fixers = ['remove_trailing_lines', 'trim_whitespace', 'standard', 'prettier_standard']
 let b:ale_fix_on_save=1
