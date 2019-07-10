@@ -4,7 +4,7 @@
   call minpac#add('k-takata/minpac', {'type': 'opt'})
 
   " Appearance
-  call minpac#add('ajmwagar/vim-deus')
+  call minpac#add('rakr/vim-one')
 
   " Navigation
   call minpac#add('junegunn/fzf.vim') " vim bindings for fzf
@@ -24,6 +24,7 @@
   call minpac#add('stephpy/vim-yaml') " Faster YAML syntax than core
   call minpac#add('cespare/vim-toml')
   call minpac#add('pangloss/vim-javascript') " Needed for js syntax folding
+  call minpac#add ('fatih/vim-go')
 
   " Compiling, Linting, & Testing
   call minpac#add('w0rp/ale')

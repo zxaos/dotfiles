@@ -8,15 +8,13 @@ if has("termguicolors")
     set t_8f=[38;2;%lu;%lu;%lum
     set t_8b=[48;2;%lu;%lu;%lum
  endif
- if &term==#'xterm-256color-italic' || $TERM==#'xterm-256color-italic'
-    let g:deus_italic=1
- endif
 endif
 
-set background=dark " Setting dark mode
-colorscheme deus
-let g:deus_termcolors=256
-let g:airline_theme='deus'
+let g:one_allow_italics=1
+colorscheme one
+set background=light " set background has to be called after setting the colorscheme.
+                     " Vim tries to determine the best background when ctermbg for the Normal highlight is defined.
+let g:airline_theme='one'
 
 if has("mouse")
  set mouse=a
