@@ -1,1 +1,1 @@
-brew "zsh", args: ["with-gdbm", "with-pcre", "with-unicode9"]
+brew "zsh"

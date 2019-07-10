@@ -1,3 +1,4 @@
 [submodule "neovim/config/pack/minpac/opt/minpac"]
-	path = neovim/config/pack/minpac/opt/minpac
+	path = nvim-config/pack/minpac/opt/minpac
 	url = https://github.com/k-takata/minpac.git
+	ignore = all

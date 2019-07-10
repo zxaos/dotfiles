@@ -2,5 +2,3 @@ brew "neovim"
 
 brew "fzf"
 brew "ripgrep"
-
-cask "vimr"

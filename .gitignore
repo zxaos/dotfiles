@@ -8,14 +8,12 @@ Brewfile
 # Neovim
 *.swp
 *~
-neovim/config/pack/minpac/
+nvim-config/pack/minpac/opt/minpac
 neovim/node_modules/
+nvim-env/venv3
 
 ## file browser
 .netrwhist
-
-## programming environments
-neovim/venv3
 
 # Generated tmuxline configuration
 tmux/tmuxline.conf
