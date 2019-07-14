@@ -15,6 +15,7 @@ Probably of limited utility to other people.
 
 ## Set up Neovim
 * `cd neovim`
+* When setting up the node globals for this env, prepend with ASDF_SKIP_RESHIM=1 to speed it up
 
 ## Configure Git
 * `git config --global core.excludesfile '~/path/to/dotfiles/gitignore_global'`
