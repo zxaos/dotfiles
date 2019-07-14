@@ -8,7 +8,7 @@ Brewfile
 # Neovim
 *.swp
 *~
-nvim-config/pack/minpac/opt/minpac
+nvim-config/pack/minpac/
 neovim/node_modules/
 nvim-env/venv3
 
@@ -20,3 +20,4 @@ tmux/tmuxline.conf
 
 # ZSH
 .zcompdump
+zsh/zsh/.config/zsh/autoload-settings/*-local-*.zsh
