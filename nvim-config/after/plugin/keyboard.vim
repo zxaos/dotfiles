@@ -101,10 +101,10 @@ function! SwitchToLayout(type)
     "nnoremap <silent> <BS> <C-W><C-H> "Fixes a bug where H was being interpreted as backspace
 
     "Better split navigation (unmap workman)
-    unmap <C-y>
-    unmap <C-n>
-    unmap <C-e>
-    unmap <C-o>
+    silent! unmap <C-y>
+    silent! unmap <C-n>
+    silent! unmap <C-e>
+    silent! unmap <C-o>
 
     "Better split navigation (map qwerty)
     map <C-h> <C-w>h
@@ -124,6 +124,8 @@ augroup init_keyboard
   au!
   if $KBL != "QWERTY"
     autocmd VimEnter * call SwitchToLayout("workman")
+  else
+    autocmd VimEnter * call SwitchToLayout("qwerty")
   endif
 augroup end
 
