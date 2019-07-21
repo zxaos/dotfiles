@@ -3,6 +3,9 @@
   call minpac#init()
   call minpac#add('k-takata/minpac', {'type': 'opt'})
 
+  " Plugin support
+  call minpac#add('tpope/vim-repeat') " Support plugins defining handler for dot repetition
+
   " Appearance
   call minpac#add('rakr/vim-one')
 
@@ -11,6 +14,9 @@
   call minpac#add('tpope/vim-projectionist') " per-project file and alternate navigation
   call minpac#add('tpope/vim-vinegar') " make netrw more usable
   call minpac#add('mhinz/vim-grepper') " Async Grepper
+
+  " Editing
+  call minpac#add('tpope/vim-surround') " use `s <whatever>` as an object for surrounding punctuation
 
   " UI and Window Management
   call minpac#add('troydm/zoomwintab.vim')
