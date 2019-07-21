@@ -14,7 +14,7 @@ compinit
 # End of lines added by compinstall
 
 plugins=(git vi-mode)
-for file in ${ZDOTDIR}/autoload-settings/**/*(.); do
+for file in ${ZDOTDIR}/autoload-settings/**/*(.)zsh; do
 	echo "sourcing $file"
 	source "$file"
 done

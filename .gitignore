@@ -20,4 +20,4 @@ tmux/tmuxline.conf
 
 # ZSH
 .zcompdump
-zsh/zsh/.config/zsh/autoload-settings/*-local-*.zsh
+zsh/zsh/.config/zsh/autoload-settings/*-local-*.zsh*
