@@ -11,6 +11,23 @@
 " are, so must be in after/plugin instead of just a settings file we load in
 " the regular way.
 
+" Common bindings that don't switch per-layout, but defined here because we
+" had to disable the default bindings loaded bythe plugin
+if exists("g:loaded_surround")
+  nmap ds  <Plug>Dsurround
+  nmap cs  <Plug>Csurround
+  nmap cS  <Plug>CSurround
+  xmap S   <Plug>VSurround
+  xmap gS  <Plug>VgSurround
+  if !exists("g:surround_no_insert_mappings") || ! g:surround_no_insert_mappings
+    if !hasmapto("<Plug>Isurround","i") && "" == mapcheck("<C-S>","i")
+      imap    <C-S> <Plug>Isurround
+    endif
+    imap      <C-G>s <Plug>Isurround
+    imap      <C-G>S <Plug>ISurround
+  endif
+endif
+
 function! SwitchToLayout(type)
   if a:type == "workman"
     "(O)pen line -> (L)ine
@@ -63,14 +80,28 @@ function! SwitchToLayout(type)
 
     " remap vim-fugitive's y<C-G> if it exists. Otherwise there's lag when
     " moving the cursor left due to the existing 'y' remapping
-    " see https://github.com/tpope/vim-fugitive/issues/761 https://vi.stackexchange.com/questions/7734/how-to-save-and-restore-a-mapping
+    " see https://github.com/tpope/vim-fugitive/issues/761
+    " https://vi.stackexchange.com/questions/7734/how-to-save-and-restore-a-mapping
     if !empty(maparg('y<C-G>', 'n'))
      let fugitive_map_save = maparg('y<C-G>', 'n', 0, 1)
      let fugitive_map_save = substitute(fugitive_map_save.rhs, '<SID>', '<SNR>' . fugitive_map_save.sid . '_', 'g')
      exe 'nnoremap <buffer> <silent> h<C-G> ' . fugitive_map_save
      nunmap <buffer> <silent> y<C-G>
     endif
-"
+   
+    if exists("g:loaded_surround")
+      silent! nunmap ys
+      silent! nunmap yS
+      silent! nunmap yss
+      silent! nunmap ySs
+      silent! nunmap ySS
+      nmap hs  <Plug>Ysurround
+      nmap hS  <Plug>YSurround
+      nmap hss <Plug>Yssurround
+      nmap hSs <Plug>YSsurround
+      nmap hSS <Plug>YSsurround
+    endif
+
   else " QWERTY
     silent! unmap l
     silent! unmap o
@@ -116,6 +147,20 @@ function! SwitchToLayout(type)
     let $FZF_DEFAULT_OPTS=''
 
     " TODO: reverese the fugitive_map_save workaround
+    
+    if exists("g:loaded_surround")
+      silent! nunmap hs
+      silent! nunmap hS
+      silent! nunmap hss
+      silent! nunmap hSs
+      silent! nunmap hSS
+      nmap ys  <Plug>Ysurround
+      nmap yS  <Plug>YSurround
+      nmap yss <Plug>Yssurround
+      nmap ySs <Plug>YSsurround
+      nmap ySS <Plug>YSsurround
+    endif
+
   endif
 endfunction
 
