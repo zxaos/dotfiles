@@ -17,6 +17,7 @@
 
   " Editing
   call minpac#add('tpope/vim-surround') " use `s <whatever>` as an object for surrounding punctuation
+  call minpac#add('tpope/vim-commentary') " gc to block comment
 
   " UI and Window Management
   call minpac#add('troydm/zoomwintab.vim')
