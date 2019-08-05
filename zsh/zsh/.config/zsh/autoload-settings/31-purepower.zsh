@@ -152,13 +152,13 @@ fi
       status                  # exit code of the last command
       command_execution_time  # duration of the last command
       background_jobs         # presence of background jobs
-      # virtualenv            # python virtual environment (https://docs.python.org/3/library/venv.html)
+      virtualenv              # python virtual environment (https://docs.python.org/3/library/venv.html)
       # anaconda              # conda environment (https://conda.io/)
       # pyenv                 # python environment (https://github.com/pyenv/pyenv)
-      # kubecontext           # current kubernetes context (https://kubernetes.io/)
+      kubecontext             # current kubernetes context (https://kubernetes.io/)
       custom_rprompt          # the output of function `custom_rprompt()` if it is defined
       context                 # user@host
-      # time                  # current time
+      time                    # current time
   )
 
   # `$(_pp_c x y`) evaluates to `y` if the terminal supports >= 256 colors and to `x` otherwise.
