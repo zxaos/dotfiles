@@ -2,3 +2,9 @@ brew "neovim"
 
 brew "fzf"
 brew "ripgrep"
+
+# Neovim execution environments
+brew "asdf"
+# asdf requirements for nodejs plugin
+brew "gpg"
+brew "coreutils"
