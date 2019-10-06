@@ -1,7 +1,3 @@
-# Meta
-# This should be symlinked from home and work
-Brewfile 
-
 # General
 .DS_Store
 
