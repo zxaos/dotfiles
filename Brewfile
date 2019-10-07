@@ -31,6 +31,7 @@ cask "quicklook-json"
 
 # Productivity
 cask "droplr"
+cask "fantastical"
 cask "omnifocus"
 cask "rocket"
 
