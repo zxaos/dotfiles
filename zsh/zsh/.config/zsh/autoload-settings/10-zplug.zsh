@@ -1,5 +1,5 @@
 export ZPLUG_HOME=${ZPLUG_HOME:=${XDG_DATA_HOME}/zsh/zplug}
-export ZPLUG_LOADFILE=${ZPLUG_LOADFILE:=${ZDOTDIR}/packages.zsh}
+export ZPLUG_LOADFILE=${ZPLUG_LOADFILE:=${ZDOTDIR}/zplug-packages.zsh}
 
 if [[ -r ${ZPLUG_HOME}/init.zsh ]]; then
 	source ${ZPLUG_HOME}/init.zsh

@@ -1,3 +1,4 @@
+echo "sourcing ${(%):-%N}"
 # Lines configured by zsh-newuser-install
 HISTFILE=${HISTFILE:=${XDG_DATA_HOME}/zsh/histfile}
 HISTSIZE=1000
