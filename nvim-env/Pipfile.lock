@@ -88,19 +88,13 @@
             ],
             "version": "==0.6.2"
         },
-        "neovim": {
-            "hashes": [
-                "sha256:a6a0e7a5b4433bf4e6ddcbc5c5ff44170be7d84259d002b8e8d8fb4ee78af60f"
-            ],
-            "version": "==0.3.1"
-        },
         "neovim-remote": {
             "hashes": [
-                "sha256:5dc724653cf4eba0d835ed9ca0e98709929cba71b94c37ced24f0f046f98ae17",
-                "sha256:97449220a113d9dafa5daf9e3280b97b1ee5970d4c29ed0872164a8acf3846e7"
+                "sha256:4fa2ee4203dea2930ee19042dd22a25a97622cdda7258f99dd87ea0b417dee84",
+                "sha256:f199ebb61c3decf462feed4e7d467094ed38d8afaf43620736b5983a12fe2427"
             ],
             "index": "pypi",
-            "version": "==2.3.4"
+            "version": "==2.4.0"
         },
         "psutil": {
             "hashes": [
