@@ -20,6 +20,7 @@
   " call minpac#add('tpope/vim-surround') " use `s <whatever>` as an object for surrounding punctuation
   call minpac#add('tpope/vim-commentary') " gc to block comment
   call minpac#add('tpope/vim-endwise') " automatically add endif etc in languages which need it
+  call minpac#add('neoclide/coc.nvim', {'branch': 'release'})
 
   " UI and Window Management
   " call minpac#add('ryanoasis/vim-devicons')
