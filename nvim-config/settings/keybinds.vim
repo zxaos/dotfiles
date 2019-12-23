@@ -6,3 +6,6 @@ nnoremap gb :ls<CR>:buffer<Space>
 
 " Quick-reload settings files
 command! Vimrc source $MYVIMRC
+
+" awkward as heck otherwise on the workman keyboard since backslash is a chord
+tnoremap <Esc><Esc> <C-\><C-n>
