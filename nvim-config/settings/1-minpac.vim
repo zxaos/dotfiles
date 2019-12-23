@@ -19,6 +19,7 @@
   " Editing
   " call minpac#add('tpope/vim-surround') " use `s <whatever>` as an object for surrounding punctuation
   call minpac#add('tpope/vim-commentary') " gc to block comment
+  call minpac#add('tpope/vim-endwise') " automatically add endif etc in languages which need it
 
   " UI and Window Management
   " call minpac#add('ryanoasis/vim-devicons')
@@ -32,6 +33,7 @@
   call minpac#add('cespare/vim-toml')
   call minpac#add('pangloss/vim-javascript') " Needed for js syntax folding
   call minpac#add ('fatih/vim-go')
+  call minpac#add ('elixir-editors/vim-elixir')
 
   " Compiling, Linting, & Testing
   call minpac#add('w0rp/ale')
