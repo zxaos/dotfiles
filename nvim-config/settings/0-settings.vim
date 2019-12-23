@@ -7,3 +7,12 @@ set showcmd
 " Open splits in more intuitive positions
 set splitbelow
 set splitright
+
+" Preffered spacing default when not overriden by a specific syntax
+" Two space wide tabs
+set tabstop=2
+set softtabstop=2
+" Expand them all
+set expandtab
+" Indent by 2 spaces by default
+set shiftwidth=2
