@@ -12,7 +12,7 @@
   " Navigation
   " Load denite as an optional dep so we can control when it starts - see
   " denite.vim settings for more information
-  call minpac#add('Shougo/denite.nvim',{'type': 'opt', 'do': ':UpdateRemotePlugins'})
+  call minpac#add('Shougo/denite.nvim', {'type': 'opt', 'do': ':UpdateRemotePlugins'})
   call minpac#add('tpope/vim-projectionist') " per-project file and alternate navigation
   call minpac#add('tpope/vim-vinegar') " make netrw more usable
 
@@ -33,8 +33,9 @@
   call minpac#add('stephpy/vim-yaml') " Faster YAML syntax than core
   call minpac#add('cespare/vim-toml')
   call minpac#add('pangloss/vim-javascript') " Needed for js syntax folding
-  call minpac#add ('fatih/vim-go')
-  call minpac#add ('elixir-editors/vim-elixir')
+  call minpac#add('fatih/vim-go')
+  call minpac#add('elixir-editors/vim-elixir')
+  call minpac#add('andyl/vim-projectionist-elixir', {'type': 'opt'}) " Projectionist bindings for Elixir and Phoenix
 
   " Compiling, Linting, & Testing
   call minpac#add('w0rp/ale')
