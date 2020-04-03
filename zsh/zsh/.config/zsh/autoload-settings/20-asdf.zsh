@@ -1,2 +1,2 @@
-source /usr/local/opt/asdf/asdf.sh
-source /usr/local/etc/bash_completion.d/asdf.bash
+# install asdf and completions from homebrew
+. /usr/local/opt/asdf/asdf.sh
