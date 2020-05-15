@@ -33,9 +33,11 @@
   call minpac#add('stephpy/vim-yaml') " Faster YAML syntax than core
   call minpac#add('cespare/vim-toml')
   call minpac#add('pangloss/vim-javascript') " Needed for js syntax folding
+  call minpac#add('gutenye/json5.vim')
   call minpac#add('fatih/vim-go')
   call minpac#add('elixir-editors/vim-elixir')
   call minpac#add('andyl/vim-projectionist-elixir', {'type': 'opt'}) " Projectionist bindings for Elixir and Phoenix
+  call minpac#add('martinda/Jenkinsfile-vim-syntax')
 
   " Compiling, Linting, & Testing
   call minpac#add('w0rp/ale')

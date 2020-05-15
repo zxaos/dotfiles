@@ -4,9 +4,7 @@
   "description": "dependencies for neovim node provider and installed plugins",
   "dependencies": {
     "fixjson": "^1.1.0",
-    "neovim": "^4.5.0",
-    "prettier": "^1.18.2",
-    "prettier-standard": "^9.1.1",
-    "standard": "^13.1.0"
+    "neovim": "^4.8.0",
+    "xo": "^0.30.0"
   }
 }
