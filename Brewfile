@@ -7,6 +7,7 @@ brew "mas"
 cask "setapp"
 
 # Basic Shell Setup
+brew "bat"
 cask "kitty"
 brew "stow"
 brew "tmux"
