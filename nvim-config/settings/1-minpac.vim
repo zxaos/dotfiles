@@ -44,6 +44,7 @@
 
   " Compiling, Linting, & Testing
   call minpac#add('w0rp/ale')
+  call minpac#add('tpope/vim-dispatch')
   call minpac#add('janko-m/vim-test')
 
   " Source Control
