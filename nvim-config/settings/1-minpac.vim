@@ -15,6 +15,7 @@
   call minpac#add('Shougo/denite.nvim', {'type': 'opt', 'do': ':UpdateRemotePlugins'})
   call minpac#add('tpope/vim-projectionist') " per-project file and alternate navigation
   call minpac#add('tpope/vim-vinegar') " make netrw more usable
+  call minpac#add('majutsushi/tagbar') " tag navigation (requires universal-ctags)
 
   " Editing
   " call minpac#add('tpope/vim-surround') " use `s <whatever>` as an object for surrounding punctuation
@@ -39,8 +40,7 @@
   call minpac#add('andyl/vim-projectionist-elixir', {'type': 'opt'}) " Projectionist bindings for Elixir and Phoenix
   call minpac#add('martinda/Jenkinsfile-vim-syntax')
   call minpac#add('fatih/vim-go')
-  call minpac#add('elixir-editors/vim-elixir')
-  call minpac#add('andyl/vim-projectionist-elixir', {'type': 'opt'}) " Projectionist bindings for Elixir and Phoenix
+  call minpac#add('rust-lang/rust.vim')
 
   " Compiling, Linting, & Testing
   call minpac#add('w0rp/ale')

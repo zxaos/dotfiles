@@ -30,6 +30,8 @@ cask "kaleidoscope"
 cask "qlmarkdown"
 cask "qlstephen"
 cask "quicklook-json"
+tap "universal-ctags/universal-ctags"
+brew "universal-ctags" args: ["HEAD"]
 
 # Productivity
 cask "droplr"
