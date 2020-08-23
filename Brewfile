@@ -32,6 +32,7 @@ cask "qlstephen"
 cask "quicklook-json"
 tap "universal-ctags/universal-ctags"
 brew "universal-ctags" args: ["HEAD"]
+brew "rust-analyzer" args: ["ignore-dependencies"]
 
 # Productivity
 cask "droplr"
