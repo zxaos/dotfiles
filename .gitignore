@@ -17,3 +17,4 @@ tmux/tmuxline.conf
 .zcompdump
 zsh/zsh/.config/zsh/autoload-settings/*-local-*.zsh*
 **/.zsh_history
+zsh/zsh/.config/zsh/.zcompcache/

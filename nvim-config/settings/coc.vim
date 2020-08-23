@@ -1,5 +1,6 @@
 let g:coc_global_extensions = [
-            \'coc-elixir'
+            \'coc-elixir',
+            \'coc-rust-analyzer'
             \]
 
              " \'coc-yank',
