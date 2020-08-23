@@ -27,3 +27,4 @@ Probably of limited utility to other people.
 * `git config --global init.defaultBranch trunk`
 
 ## Manually install extras
+rustup component add rust-src # for RLS / rust-analyzer
