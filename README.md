@@ -24,6 +24,7 @@ Probably of limited utility to other people.
 * `git config --global rebase.autosquash true`
 * `git config --global user.name "Matt Bond"`
 * `git config --global user.email "matt+git@codefire.io"`
+* `git config --global pull.ff only`
 * `git config --global init.defaultBranch trunk`
 
 ## Manually install extras
