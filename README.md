@@ -6,7 +6,7 @@ Probably of limited utility to other people.
 * install rustup manually and rust (from https://rust-lang.github.io/rustup/installation/index.html)
 * `brew tap homebrew/bundle`
 * `brew bundle`
-  * make sure rustup is installed first so that rust-analyzer (includer in the Brewfile) can be installed 
+  * make sure rustup is installed first so that rust-analyzer (includer in the Brewfile) can be installed
 
 ## Set up shell
 * `cd zsh`
@@ -25,7 +25,7 @@ Probably of limited utility to other people.
 * `git config --global user.name "Matt Bond"`
 * `git config --global user.email "matt+git@codefire.io"`
 * `git config --global pull.ff only`
-* `git config --global init.defaultBranch trunk`
+* `git config --global init.defaultBranch main`
 
 ## Manually install extras
 rustup component add rust-src # for RLS / rust-analyzer
