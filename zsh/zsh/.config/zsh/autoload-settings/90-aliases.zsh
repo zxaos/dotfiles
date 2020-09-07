@@ -12,3 +12,5 @@ fi
 
 # Exa in long format with slash for dirs and * for executables
 l() { exa "${1:--lF}"; }
+
+alias tower="open $(git rev-parse --show-toplevel) -a Tower"
