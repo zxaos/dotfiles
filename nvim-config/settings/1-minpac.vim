@@ -39,8 +39,8 @@
   call minpac#add('elixir-editors/vim-elixir')
   call minpac#add('andyl/vim-projectionist-elixir', {'type': 'opt'}) " Projectionist bindings for Elixir and Phoenix
   call minpac#add('martinda/Jenkinsfile-vim-syntax')
-  call minpac#add('fatih/vim-go')
   call minpac#add('rust-lang/rust.vim')
+  call minpac#add('arzg/vim-rust-syntax-ext')
 
   " Compiling, Linting, & Testing
   call minpac#add('w0rp/ale')
