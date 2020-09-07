@@ -9,3 +9,6 @@ command! Vimrc source $MYVIMRC
 
 " awkward as heck otherwise on the workman keyboard since backslash is a chord
 tnoremap <Esc><Esc> <C-\><C-n>
+
+" clear search highlight
+nnoremap <Leader>c :nohlsearch<CR>
