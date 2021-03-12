@@ -1,4 +1,7 @@
-echo "sourcing ${(%):-%N}"
+# Suppress starting junk %
+if [[ $ZDOTDEBUG ]] then
+	echo "sourcing ${(%):-%N}"
+fi
 # Lines configured by zsh-newuser-install
 HISTFILE=${HISTFILE:=${XDG_DATA_HOME}/zsh/histfile}
 HISTSIZE=1000
@@ -21,6 +24,8 @@ compinit
 
 plugins=(git vi-mode)
 for file in ${ZDOTDIR}/autoload-settings/**/*(.)zsh; do
-	echo "sourcing $file"
+	if [[ $ZDOTDEBUG ]] then
+		echo "sourcing $file"
+	fi
 	source "$file"
 done

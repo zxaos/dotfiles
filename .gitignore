@@ -4,20 +4,21 @@
 # Neovim
 *.swp
 *~
-nvim-config/pack/minpac/
-nvim-env/node_modules/
+configs/nvim-config/pack/minpac/
+configs/nvim-env/node_modules/
 
 ## file browser
 .netrwhist
 
 # Generated tmuxline configuration
-tmux/tmuxline.conf
+configs/tmux/tmuxline.conf
 
 # ZSH
 .zcompdump
-zsh/zsh/.config/zsh/autoload-settings/*-local-*.zsh*
+configs/zsh/config-zsh/autoload-settings/*-local-*.zsh*
 **/.zsh_history
-zsh/zsh/.config/zsh/.zcompcache/
+configs/zsh/config-zsh/.zcompcache/
+configs/zsh/config-zsh/.zsh_sessions/
 
 # Onivim
 oni2/**/*

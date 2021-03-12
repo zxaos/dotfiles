@@ -4,41 +4,38 @@
 
 # Prerequisites
 brew "mas"
-cask "setapp"
+# cask "setapp"
 
 # Basic Shell Setup
 brew "bat"
-cask "kitty"
-brew "stow"
 brew "tmux"
 brew "zsh"
 
 # Editing
-brew "fzf"
+# brew "fzf"
 brew "ripgrep"
 
 # Developer Tooling
 brew "asdf"
-cask "aws-vault"
+# cask "aws-vault"
 cask "dash"
-brew "docker-completion"
+# brew "docker-completion"
 brew "git"
-cask "gitkraken"
+# cask "gitkraken"
 brew "git-revise"
 brew "gh"
 cask "kaleidoscope"
-cask "qlmarkdown"
-cask "qlstephen"
-cask "quicklook-json"
+# cask "qlmarkdown"
+# cask "qlstephen"
+# cask "quicklook-json"
 tap "universal-ctags/universal-ctags"
-brew "universal-ctags" args: ["HEAD"]
-brew "rust-analyzer" args: ["ignore-dependencies"]
+brew "universal-ctags", args: ["HEAD"]
+brew "rust-analyzer", args: ["ignore-dependencies"]
 
 # Productivity
-cask "droplr"
+# cask "droplr"
 cask "fantastical"
-cask "omnifocus"
-cask "rocket"
+# cask "rocket"
 
 # MAS
 mas "Bear", id: 1091189122

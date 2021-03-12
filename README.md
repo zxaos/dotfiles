@@ -4,6 +4,7 @@ Probably of limited utility to other people.
 ## Install Software
 * Install xcode and homebrew
 * install rustup manually and rust (from https://rust-lang.github.io/rustup/installation/index.html)
+* Fake a homebrew rust install by symlinking /usr/local/Cellar/rust/HEAD to ~/.cargo/bin/
 * `brew tap homebrew/bundle`
 * `brew bundle`
   * make sure rustup is installed first so that rust-analyzer (includer in the Brewfile) can be installed
