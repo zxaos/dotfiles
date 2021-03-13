@@ -25,3 +25,5 @@ oni2/**/*
 !oni2/configuration.json
 !oni2/keybindings.json
 
+# iterm2
+configs/iterm2/AppSupport
