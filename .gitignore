@@ -27,3 +27,4 @@ oni2/**/*
 
 # iterm2
 configs/iterm2/AppSupport
+configs/zsh/config-zsh/.iterm2
