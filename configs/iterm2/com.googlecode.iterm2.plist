@@ -719,6 +719,12 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>411B4224-AAE6-41C5-BDC4-1105D4257C00</string>
+	<key>DimBackgroundWindows</key>
+	<true/>
+	<key>DimOnlyText</key>
+	<true/>
+	<key>EnableAPIServer</key>
+	<true/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideScrollbar</key>
