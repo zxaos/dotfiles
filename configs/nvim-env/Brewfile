@@ -7,4 +7,4 @@ brew "ripgrep"
 brew "asdf"
 # asdf requirements for nodejs plugin
 brew "gpg"
-brew "coreutils"
+brew "gawk"
