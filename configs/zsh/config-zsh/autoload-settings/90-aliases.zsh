@@ -7,8 +7,8 @@ alias tf='terraform'
 alias tower='open $(git rev-parse --show-toplevel) -a Tower'
 
 if type "bat" > /dev/null; then
-  # bat uses dark mode when the OS does
-  alias cat="bat --theme=\"\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo GitHub || echo 'Monokai Extended Light')\""
+  # bat uses default theme when the OS is dark, and light theme when it's light
+  alias cat="bat --theme=\"\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo '' || echo 'Monokai Extended Light')\""
 fi
 
 # Exa in long format with slash for dirs and * for executables
