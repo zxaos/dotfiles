@@ -88,7 +88,7 @@ function! SwitchToLayout(type)
      exe 'nnoremap <buffer> <silent> h<C-G> ' . fugitive_map_save
      nunmap <buffer> <silent> y<C-G>
     endif
-   
+
     if exists("g:loaded_surround")
       silent! nunmap ys
       silent! nunmap yS
@@ -147,7 +147,7 @@ function! SwitchToLayout(type)
     let $FZF_DEFAULT_OPTS=''
 
     " TODO: reverese the fugitive_map_save workaround
-    
+
     if exists("g:loaded_surround")
       silent! nunmap hs
       silent! nunmap hS
