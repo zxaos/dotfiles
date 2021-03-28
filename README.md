@@ -8,6 +8,7 @@ Probably of limited utility to other people.
 * `brew tap homebrew/bundle`
 * `brew bundle`
   * make sure rustup is installed first so that rust-analyzer (includer in the Brewfile) can be installed
+  * This is also required so that rust dependencies in other bundle files (eg bat in zsh) use the rustup compiler instead of the homebrew rust one
 
 ## Set up shell
 * `cd zsh`
