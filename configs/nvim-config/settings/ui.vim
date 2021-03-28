@@ -13,12 +13,39 @@ endif
 let g:one_allow_italics=1
 colorscheme one
 set background=light " set background has to be called after setting the colorscheme.
-                     " Vim tries to determine the best background when ctermbg for the Normal highlight is defined.
+                     " Vim tries to determine the best background when ctermbg
+                     " for the Normal highlight is defined.
+                     " See https://github.com/rakr/vim-one/issues/21
 let g:airline_theme='one'
 
 if has("mouse")
  set mouse=a
 endif
+
+" Toggle dark and light modes + schemes , or switch to a specific mode by argument.
+function! DarkLight(...)
+  if (&background == 'light')
+    let l:toggle='dark'
+  else
+    let l:toggle='light'
+  endif
+  let l:targetmode=get(a:, 1, l:toggle)
+
+  if l:targetmode=='dark'
+    " Not setting a colour scheme currently because vim-one supports toggling
+    " just background colour. But you could if using two different themes for
+    " example.
+
+    " colorscheme some-dark-theme
+    set background=dark
+
+  elseif l:targetmode=='light'
+    "colorscheme some-light-theme
+    set background=light
+  endif
+endfunction
+
+:command! DarkLight call DarkLight()
 
 " See also GUI-specific files:
 " * vimr.vim
