@@ -1,3 +1,8 @@
+" Enable mouse support
+if has("mouse")
+ set mouse=a
+endif
+
 " Enable "True Colour" support.
 if has("termguicolors")
  set termguicolors
@@ -12,15 +17,22 @@ endif
 
 let g:one_allow_italics=1
 colorscheme one
-set background=light " set background has to be called after setting the colorscheme.
-                     " Vim tries to determine the best background when ctermbg
-                     " for the Normal highlight is defined.
-                     " See https://github.com/rakr/vim-one/issues/21
 let g:airline_theme='one'
 
-if has("mouse")
- set mouse=a
+" Match the system theme if one is set
+if has("macunix")
+  if system("defaults read -g AppleInterfaceStyle") =~ '^Dark'
+    set background=dark
+  else
+    set background=light
+  endif
+else
+  set background=light
 endif
+
+" set background has to be called after setting the colorscheme. Vim tries to 
+" determine the best background when ctermbg for the Normal highlight is defined
+" See https://github.com/rakr/vim-one/issues/21
 
 " Toggle dark and light modes + schemes , or switch to a specific mode by argument.
 function! DarkLight(...)
