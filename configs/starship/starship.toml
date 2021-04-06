@@ -1,3 +1,10 @@
+# Only one gcloud account, quash the notice
+[gcloud]
+disabled = true
+
+[status]
+disabled = false
+
 # Prefer Nerdfont symbols over emoji
 [aws]
 symbol = " "
