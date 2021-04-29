@@ -44,7 +44,7 @@ function! PackInit() abort
   call minpac#add('arzg/vim-rust-syntax-ext')
 
   " Compiling, Linting, & Testing
-  call minpac#add('w0rp/ale')
+  call minpac#add('dense-analysis/ale')
   call minpac#add('tpope/vim-dispatch')
   call minpac#add('janko-m/vim-test')
 
