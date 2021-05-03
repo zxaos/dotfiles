@@ -21,7 +21,6 @@ brew "asdf"
 cask "dash"
 # brew "docker-completion"
 brew "git"
-# cask "gitkraken"
 brew "git-revise"
 brew "gh"
 cask "kaleidoscope"
@@ -32,13 +31,17 @@ tap "universal-ctags/universal-ctags"
 brew "universal-ctags", args: ["HEAD"]
 brew "rust-analyzer", args: ["ignore-dependencies"]
 
+# Security
+brew "mailtrackerblocker"
+
 # Productivity
 # cask "droplr"
 cask "fantastical"
 # cask "rocket"
+case "bunch"
 
 # MAS
-mas "Bear", id: 1091189122
+#mas "Bear", id: 1091189122
 mas "DaisyDisk", id: 411643860
 mas "Deliveries", id: 924726344
 mas "Patterns", id: 429449079
