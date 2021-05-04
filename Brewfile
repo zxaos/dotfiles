@@ -8,6 +8,8 @@ brew "mas"
 
 # Basic Shell Setup
 brew "bat"
+brew "exa"
+brew "starship"
 brew "tmux"
 brew "zsh"
 
@@ -17,33 +19,37 @@ brew "ripgrep"
 
 # Developer Tooling
 brew "asdf"
-# cask "aws-vault"
-cask "dash"
-# brew "docker-completion"
+
+## For asdf-nodejs
+brew "gpg"
+brew "gawk"
 brew "git"
 brew "git-revise"
 brew "gh"
+cask "iterm2"
 cask "kaleidoscope"
+cask "tower"
 # cask "qlmarkdown"
 # cask "qlstephen"
 # cask "quicklook-json"
-tap "universal-ctags/universal-ctags"
-brew "universal-ctags", args: ["HEAD"]
-brew "rust-analyzer", args: ["ignore-dependencies"]
+# tap "universal-ctags/universal-ctags"
+# brew "universal-ctags", args: ["HEAD"]
+# brew "rust-analyzer", args: ["ignore-dependencies"]
 
 # Security
-brew "mailtrackerblocker"
+cask "mailtrackerblocker"
 
 # Productivity
-# cask "droplr"
-cask "fantastical"
-# cask "rocket"
-case "bunch"
+cask "slack"
+cask "camo-studio"
+
+# Window Management
+brew "yabai"
 
 # MAS
-#mas "Bear", id: 1091189122
 mas "DaisyDisk", id: 411643860
 mas "Deliveries", id: 924726344
 mas "Patterns", id: 429449079
 mas "Shush", id: 496437906
-mas "Slack", id: 803453959
+mas "Tot", id: 1491071483
+
