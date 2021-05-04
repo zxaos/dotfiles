@@ -4,7 +4,7 @@ Probably of limited utility to other people.
 ## Install Software
 * Install xcode and homebrew
 * install rustup manually and rust (from https://rust-lang.github.io/rustup/installation/index.html)
-* Fake a homebrew rust install by symlinking /usr/local/Cellar/rust/HEAD to ~/.cargo/bin/
+* Fake a homebrew rust install by symlinking /usr/local/Cellar/rust/HEAD/bin to ~/.cargo/bin/
 * `brew tap homebrew/bundle`
 * `brew bundle`
   * make sure rustup is installed first so that rust-analyzer (includer in the Brewfile) can be installed
@@ -22,7 +22,7 @@ Probably of limited utility to other people.
 * When setting up the node globals for this env, prepend with ASDF_SKIP_RESHIM=1 to speed it up
 
 ## Configure Git
-* `git config --global core.excludesfile '~/path/to/dotfiles/gitignore_global'`
+* `git config --global core.excludesfile '~/.dotfiles/configs/git/gitignore_global'`
 * `git config --global rebase.autosquash true`
 * `git config --global user.name "Matt Bond"`
 * `git config --global user.email "matt+git@codefire.io"`
