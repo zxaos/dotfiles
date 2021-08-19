@@ -29,3 +29,5 @@ for file in ${ZDOTDIR}/autoload-settings/**/*(.)zsh; do
 	fi
 	source "$file"
 done
+
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh ] && source "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh

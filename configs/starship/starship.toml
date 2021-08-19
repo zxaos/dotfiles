@@ -8,6 +8,7 @@ disabled = false
 # Prefer Nerdfont symbols over emoji
 [aws]
 symbol = " "
+disabled = true
 
 [conda]
 symbol = " "

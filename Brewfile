@@ -12,6 +12,7 @@ brew "exa"
 brew "starship"
 brew "tmux"
 brew "zsh"
+brew "zplug"
 
 # Editing
 # brew "fzf"
