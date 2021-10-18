@@ -13,6 +13,7 @@ brew "starship"
 brew "tmux"
 brew "zsh"
 brew "zplug"
+brew "moreutils"
 
 # Editing
 # brew "fzf"
@@ -20,9 +21,7 @@ brew "ripgrep"
 
 # Developer Tooling
 brew "asdf"
-
 ## For asdf-nodejs
-brew "gpg"
 brew "gawk"
 brew "git"
 brew "git-revise"
@@ -36,21 +35,30 @@ cask "tower"
 # tap "universal-ctags/universal-ctags"
 # brew "universal-ctags", args: ["HEAD"]
 # brew "rust-analyzer", args: ["ignore-dependencies"]
+brew "up"
 
 # Security
+brew "gpg"
+brew "pinentry-mac"
 cask "mailtrackerblocker"
+cask "keybase"
 
 # Productivity
 cask "slack"
 cask "camo-studio"
 
-# Window Management
-brew "yabai"
+
+## Videoconferencing
+cask "homebrew/cask-drivers/elgato-control-center"
+cask "zoom"
 
 # MAS
 mas "DaisyDisk", id: 411643860
 mas "Deliveries", id: 924726344
 mas "Patterns", id: 429449079
+mas "Scenecuts Helper", id: 1540491573
 mas "Shush", id: 496437906
+mas "Tab Space", id: 1473726602
 mas "Tot", id: 1491071483
+mas "Wimoweh", id: 610341008
 
