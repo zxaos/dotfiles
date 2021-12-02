@@ -1,0 +1,34 @@
+{
+  "entries": {
+    "tap": {
+      "netlify/tools": {
+        "revision": "175a2e2ffc78db0ee43596a2e09177c9fa4690f3",
+        "options": {
+          "clone_target": "git@github.com:netlify/homebrew-tools.git"
+        }
+      }
+    },
+    "brew": {
+      "ttop": {
+        "version": "0.0.6",
+        "bottle": false
+      },
+      "dosctl": {
+        "version": "0.0.1-rc.2",
+        "bottle": false
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "big_sur": {
+        "HOMEBREW_VERSION": "3.2.0",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "2f02b016b770dcdaa82df276677d2913e4b2b784",
+        "CLT": "12.5.0.22.9",
+        "Xcode": "12.5",
+        "macOS": "11.4"
+      }
+    }
+  }
+}
