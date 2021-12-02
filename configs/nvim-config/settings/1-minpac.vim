@@ -23,6 +23,7 @@ function! PackInit() abort
   call minpac#add('tpope/vim-commentary') " gc to block comment
   call minpac#add('tpope/vim-endwise') " automatically add endif etc in languages which need it
   call minpac#add('neoclide/coc.nvim', {'branch': 'release'})
+  call minpac#add('pedrohdz/vim-yaml-folds')
 
   " UI and Window Management
   " call minpac#add('ryanoasis/vim-devicons')
