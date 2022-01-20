@@ -1,4 +1,4 @@
-export ZPLUG_HOME=${ZPLUG_HOME:=/usr/local/opt/zplug}
+export ZPLUG_HOME=${ZPLUG_HOME:=${HOMEBREW_PREFIX}/opt/zplug}
 export ZPLUG_LOADFILE=${ZPLUG_LOADFILE:=${ZDOTDIR}/zplug-packages.zsh}
 
 function (){

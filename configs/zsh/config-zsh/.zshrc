@@ -10,6 +10,16 @@ setopt nomatch inc_append_history_time
 bindkey -v
 # End of lines configured by zsh-newuser-install
 
+
+# Load homebrew paths
+if [ -f /opt/homebrew/bin/brew ]; then
+	eval "$(/opt/homebrew/bin/brew shellenv)"
+elif [ -f /usr/local/bin/brew]; then
+	eval "$(/usr/local/bin/brew shellenv)"
+else
+	echo "WARNING: no homebrew paths added!"
+fi
+
 # Load brew completions if present
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
@@ -31,3 +41,6 @@ for file in ${ZDOTDIR}/autoload-settings/**/*(.)zsh; do
 done
 
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh ] && source "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh
+
+test -e "${ZDOTDIR}/.iterm2_shell_integration.zsh" && source "${ZDOTDIR}/.iterm2_shell_integration.zsh"
+
