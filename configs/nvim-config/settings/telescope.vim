@@ -20,5 +20,6 @@ EOF
 nnoremap <leader>tb <cmd>Telescope buffers<cr>
 nnoremap <leader>td <cmd>Telescope dash search<cr>
 nnoremap <leader>tf <cmd>Telescope find_files<cr>
-nnoremap <leader>tg <cmd>Telescope live_grep<cr>
+nnoremap <leader>tg <cmd>Telescope git_files<cr>
 nnoremap <leader>th <cmd>Telescope help_tags<cr>
+nnoremap <leader>tr <cmd>Telescope live_grep<cr>
