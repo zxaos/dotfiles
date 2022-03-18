@@ -9,6 +9,7 @@ brew "mas"
 # Basic Shell Setup
 brew "bat"
 brew "exa"
+brew "fd"
 brew "starship"
 brew "tmux"
 brew "zsh"
@@ -16,7 +17,8 @@ brew "zplug"
 brew "moreutils"
 
 # Editing
-# brew "fzf"
+brew "fzf"
+brew "neovim"
 brew "ripgrep"
 
 # Developer Tooling
@@ -29,9 +31,6 @@ brew "gh"
 cask "iterm2"
 cask "kaleidoscope"
 cask "tower"
-# cask "qlmarkdown"
-# cask "qlstephen"
-# cask "quicklook-json"
 # tap "universal-ctags/universal-ctags"
 # brew "universal-ctags", args: ["HEAD"]
 # brew "rust-analyzer", args: ["ignore-dependencies"]
@@ -40,8 +39,6 @@ brew "up"
 # Security
 brew "gpg"
 brew "pinentry-mac"
-cask "mailtrackerblocker"
-cask "keybase"
 
 # Productivity
 cask "slack"
