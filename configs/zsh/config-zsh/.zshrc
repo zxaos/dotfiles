@@ -14,7 +14,7 @@ bindkey -v
 # Load homebrew paths
 if [ -f /opt/homebrew/bin/brew ]; then
 	eval "$(/opt/homebrew/bin/brew shellenv)"
-elif [ -f /usr/local/bin/brew]; then
+elif [ -f /usr/local/bin/brew ]; then
 	eval "$(/usr/local/bin/brew shellenv)"
 else
 	echo "WARNING: no homebrew paths added!"
