@@ -1,6 +1,6 @@
 # Suppress starting junk %
 if [[ $ZDOTDEBUG ]] then
-	echo "sourcing ${(%):-%N}"
+  echo "sourcing ${(%):-%N}"
 fi
 # Lines configured by zsh-newuser-install
 HISTFILE=${HISTFILE:=${XDG_DATA_HOME}/zsh/histfile}
@@ -13,11 +13,11 @@ bindkey -v
 
 # Load homebrew paths
 if [ -f /opt/homebrew/bin/brew ]; then
-	eval "$(/opt/homebrew/bin/brew shellenv)"
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 elif [ -f /usr/local/bin/brew ]; then
-	eval "$(/usr/local/bin/brew shellenv)"
+  eval "$(/usr/local/bin/brew shellenv)"
 else
-	echo "WARNING: no homebrew paths added!"
+  echo "WARNING: no homebrew paths added!"
 fi
 
 # Load brew completions if present
@@ -34,13 +34,15 @@ compinit
 
 plugins=(git vi-mode)
 for file in ${ZDOTDIR}/autoload-settings/**/*(.)zsh; do
-	if [[ $ZDOTDEBUG ]] then
-		echo "sourcing $file"
-	fi
-	source "$file"
+  if [[ $ZDOTDEBUG ]] then
+    echo "sourcing $file"
+  fi
+  source "$file"
 done
 
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh ] && source "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh
 
 test -e "${ZDOTDIR}/.iterm2_shell_integration.zsh" && source "${ZDOTDIR}/.iterm2_shell_integration.zsh"
 
+# Even if one of the previous commands errors, start with a "clean/successful" prompt
+true
