@@ -6,7 +6,7 @@ fi
 HISTFILE=${HISTFILE:=${XDG_DATA_HOME}/zsh/histfile}
 HISTSIZE=1000
 SAVEHIST=1000
-setopt nomatch inc_append_history_time
+setopt nomatch inc_append_history_time hist_ignore_space
 bindkey -v
 # End of lines configured by zsh-newuser-install
 

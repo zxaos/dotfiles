@@ -48,6 +48,7 @@ function! PackInit() abort
   call minpac#add('rust-lang/rust.vim')
   call minpac#add('stephpy/vim-yaml') " Faster YAML syntax than core
   call minpac#add('tsandall/vim-rego')
+  call minpac#add('aliou/bats.vim')
 
   " Compiling, Linting, & Testing
   call minpac#add('dense-analysis/ale')

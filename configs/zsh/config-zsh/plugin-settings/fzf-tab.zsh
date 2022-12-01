@@ -8,3 +8,8 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
 # switch group using `,` and `.`
 zstyle ':fzf-tab:*' switch-group ',' '.'
+# see https://github.com/Aloxaf/fzf-tab/wiki/Configuration#default-color
+zstyle ':fzf-tab:*' default-color $'\033[30m'
+# see https://man.archlinux.org/man/fzf.1.en#color=
+zstyle ':fzf-tab:*' fzf-flags --color=light
+

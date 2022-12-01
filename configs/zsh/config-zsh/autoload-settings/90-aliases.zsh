@@ -3,6 +3,8 @@ alias ap='ansible-playbook'
 alias fm='furthermore'
 alias kx='kubectx'
 alias kxu="kubectl config unset current-context"
+alias pod="popd"
+alias pud="pushd"
 alias tf='terraform'
 alias tower='open $(git rev-parse --show-toplevel) -a Tower'
 
