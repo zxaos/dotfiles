@@ -37,9 +37,9 @@ function! PackInit() abort
   call minpac#add('neovim/nvim-lspconfig') " Collection of configurations for the built-in LSP client
   call minpac#add('andyl/vim-projectionist-elixir', {'type': 'opt'}) " Projectionist bindings for Elixir and Phoenix
   call minpac#add('arzg/vim-rust-syntax-ext')
-  call minpac#add('cespare/vim-toml')
+  " call minpac#add('cespare/vim-toml')
   call minpac#add('elixir-editors/vim-elixir')
-  call minpac#add('fatih/vim-go')
+  " call minpac#add('fatih/vim-go')
   call minpac#add('gutenye/json5.vim')
   call minpac#add('hashivim/vim-terraform')
   call minpac#add('martinda/Jenkinsfile-vim-syntax')
