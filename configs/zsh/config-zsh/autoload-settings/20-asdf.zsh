@@ -1,3 +1,2 @@
 # install asdf and completions from homebrew
-
-source "${HOMEBREW_PREFIX}/opt/asdf/libexec/asdf.sh"
+# This was moved to zshenv so that VimR could have a proper environment in non-interactive mode
