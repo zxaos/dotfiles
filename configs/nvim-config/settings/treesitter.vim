@@ -14,6 +14,7 @@ require'nvim-treesitter.configs'.setup {
     "hcl",
     "html",
     "json",
+    "rust",
     "toml",
     "yaml",
   },
