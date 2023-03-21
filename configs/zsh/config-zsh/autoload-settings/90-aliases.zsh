@@ -21,6 +21,10 @@ if (( $+commands[bat] )); then
   fi
 fi
 
+if [ -d "/Applications/Tailscale.app/" ]; then
+  alias tailscale='tailscale=/Applications/Tailscale.app/Contents/MacOS/Tailscale'
+fi
+
 # Exa in long format with slash for dirs and * for executables
 l() { exa "${1:--lF}"; }
 
