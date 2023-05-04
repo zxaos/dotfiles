@@ -8,6 +8,9 @@ set showcmd
 set splitbelow
 set splitright
 
+" Show line numbers
+set number
+
 " Preffered spacing default when not overriden by a specific syntax
 " Two space wide tabs
 set tabstop=2

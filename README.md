@@ -5,6 +5,8 @@ Probably of limited utility to other people.
 * Install xcode and homebrew
 * install rustup manually and rust (from https://rust-lang.github.io/rustup/installation/index.html)
 * Fake a homebrew rust install by symlinking /usr/local/Cellar/rust/HEAD/bin to ~/.cargo/bin/
+* Fake a homebrew elixir install by symlinking /usr/local/Cellar/elixir/HEAD/bin/elixir to ~/.asdf/shims/elixir and setting the asdf global elixir version appropriately
+* ditto for erlang
 * `brew tap homebrew/bundle`
 * `brew bundle`
   * make sure rustup is installed first so that rust-analyzer (includer in the Brewfile) can be installed
