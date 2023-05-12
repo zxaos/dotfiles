@@ -1,1 +1,1 @@
-[ -f ~/.config/op/plugins.zsh ] && source ~/.config/op/plugins.sh
+[ -f ~/.config/op/plugins.sh ] && source ~/.config/op/plugins.sh

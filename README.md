@@ -4,6 +4,7 @@ Probably of limited utility to other people.
 ## Install Software
 * Install xcode and homebrew
   * xcode-select --install
+* Install 1Password
 * bootstrap zsh shell some homebrew works properly
 * install rustup manually and rust (from https://rust-lang.github.io/rustup/installation/index.html)
 * Fake a homebrew rust install by symlinking /usr/local/Cellar/rust/HEAD/bin to ~/.cargo/bin/
