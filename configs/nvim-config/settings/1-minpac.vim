@@ -10,7 +10,7 @@ function! PackInit() abort
 
   " Appearance
   call minpac#add('rakr/vim-one')
-  call minpac#add('kyazdani42/nvim-web-devicons')
+  call minpac#add('nvim-tree/nvim-web-devicons')
   call minpac#add('ryanoasis/vim-devicons')
   call minpac#add('vim-airline/vim-airline')
   call minpac#add('vim-airline/vim-airline-themes')
@@ -30,6 +30,8 @@ function! PackInit() abort
   call minpac#add('pedrohdz/vim-yaml-folds')
 
   " UI and Window Management
+  call minpac#add('folke/trouble.nvim')
+
   " Syntax
   call minpac#add('nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}) " Treesitter abstraction and syntax highlighting
   call minpac#add('neovim/nvim-lspconfig') " Collection of configurations for the built-in LSP client

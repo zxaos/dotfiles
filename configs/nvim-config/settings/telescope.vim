@@ -10,8 +10,11 @@ require('telescope').setup {
 -- See fzf defaults at https://github.com/nvim-telescope/telescope-fzf-native.nvim#telescope-setup-and-configuration
 
 -- Load telescope extensions
-require('telescope').load_extension('fzf')
-require('telescope').load_extension('dash')
+local telescope = require('telescope')
+-- local trouble = require('trouble.providers.telescope')
+telescope.load_extension('fzf')
+telescope.load_extension('dash')
+
 
 
 EOF
