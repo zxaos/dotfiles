@@ -1,4 +1,0 @@
-tap "netlify/tools", "git@github.com:netlify/homebrew-tools.git"
-
-brew "ttop"
-brew "dosctl"

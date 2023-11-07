@@ -1,1 +1,0 @@
-brew "macvim", args: ["without-python", "with-python3", "without-cscope", "with-override-system-vim"]

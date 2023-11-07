@@ -1,0 +1,59 @@
+[
+  {
+    "context": "Editor && VimControl && !VimWaiting && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work in normal & visual mode
+      // # Workman bindings
+      // HJKL -> YNEO
+      // (Y)ank -> (H)aul
+      "y": "vim::Left",
+      "h": ["vim::PushOperator", "Yank"],
+      // Search (N)ext -> (J)ump / (J)oin -> Joi(n)
+      "n": "vim::Down",
+      "shift-n": "vim::JoinLines",
+      "j": "search::SelectNextMatch",
+      "shift-j": "search::SelectPrevMatch",
+      // (E)nd of word -> brea(K) of word
+      "e": "vim::Up",
+      "k": "vim::NextWordEnd",
+      "shift-k": ["vim::NextWordEnd", { "ignorePunctuation": true }],
+      // (O)pen line -> (L)ine
+      "o": "vim::Right"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && vim_operator == none && !VimWaiting",
+    "bindings": {
+      // (O)pen line -> (L)ine
+      // Not sure why this is in a different section regarding operators, but
+      // I'm mirroring the context of default zed vim bindings just in case.
+      "l": "vim::InsertLineBelow",
+      "shift-l": "vim::InsertLineAbove"
+    }
+  },
+  // hh pull line
+  {
+    "context": "Editor && vim_operator == y",
+    "bindings": {
+      "h": "vim::CurrentLine"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work only in normal mode
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
+    "bindings": {
+      // visual, visual line & visual block modes
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work in insert mode
+    }
+  }
+]

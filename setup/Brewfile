@@ -1,0 +1,33 @@
+# Run with `brew bundle`
+
+# Meta
+brew "mas"
+cask "setapp"
+
+
+# CLI
+brew "eza" # Maintained fork of exa
+cask "warp"
+
+# Communications
+# cask "camo-studio"
+cask "elgato-stream-deck"
+cask "elgato-control-center"
+mas "Slack", id: 803453959
+
+# Notes
+cask "obsidian"
+mas "Tot", id: 1491071483
+
+# Image Editing
+mas "Pixelmator Pro", id: 1289583905
+
+# Development
+cask "tower"
+cask "zed"
+
+## asdf-vm
+brew "coreutils"
+brew "curl"
+brew "git"
+brew "asdf"
