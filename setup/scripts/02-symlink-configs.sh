@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
-dirs=()
+dirs=(".config")
 symlinks=()
+
+# starship
+symlinks+=("../.dotfiles/configs/starship/starship.toml .config/starship.toml")
 
 # zed editor
 dirs+=(".config/zed")

@@ -1,0 +1,17 @@
+# This is starship tuned for Warp
+
+right_format='$time'
+
+[battery]
+disabled = true
+
+[time]
+format = '\[[$time]($style)\]'
+disabled = false
+
+# There's no point in these until Warp renders the input on the same line as the prompt
+[character]
+disabled = true
+
+[line_break]
+disabled = true
