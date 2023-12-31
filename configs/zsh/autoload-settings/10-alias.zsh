@@ -8,3 +8,5 @@ l() {
     eza -l --icons "$@"
   fi
 }
+
+alias nvim=zed

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-dirs=(".config")
+dirs=(".config .ssh/sock")
 symlinks=()
 
 # starship

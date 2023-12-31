@@ -7,6 +7,7 @@ cask "setapp"
 
 # CLI
 brew "eza" # Maintained fork of exa
+brew "ripgrep"
 cask "warp"
 
 # Communications
@@ -19,12 +20,16 @@ mas "Slack", id: 803453959
 cask "obsidian"
 mas "Tot", id: 1491071483
 
-# Image Editing
+# Media Handling
 mas "Pixelmator Pro", id: 1289583905
+cask "vlc"
 
 # Development
 cask "tower"
 cask "zed"
+
+# Security 
+mas "Yubico Authenticator", id: 1497506650
 
 ## asdf-vm
 brew "coreutils"
