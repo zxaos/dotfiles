@@ -21,3 +21,6 @@ if [ -f /opt/homebrew/opt/asdf/libexec/asdf.sh ]; then
 elif [ -f /usr/local/opt/asdf/libexec/asdf.sh ]; then
     source /usr/local/opt/asdf/libexec/asdf.sh
 fi
+
+## rust
+path=("$CARGO_HOME/bin" $path)

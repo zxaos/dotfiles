@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-dirs=(".config .ssh/sock")
+dirs=(".config .cache .local/share .local/state .ssh/sock")
 symlinks=()
 
 # starship
@@ -23,9 +23,16 @@ for d in "${dirs[@]}"; do
     mkdir -p $d
 done
 
+did_symlink=0
 for s in "${symlinks[@]}"; do
     if [ ! -e "${s#* }" ]; then
         echo "Symlink ${s#* } does not exist, creating..."
         ln -ws $s
+        did_symlink=1
     fi
 done
+
+if [ $did_symlink -eq 1 ]; then
+    echo "Symlinks created. Paths may have changed, please restart shell and re-run setup."
+    exit 1
+fi

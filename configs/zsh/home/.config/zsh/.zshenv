@@ -15,3 +15,7 @@ fi
 # else
 #   export VISUAL="nvim"
 # fi
+
+# Put rust in XDG dirs
+export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
+export CARGO_HOME="$XDG_DATA_HOME/cargo"
