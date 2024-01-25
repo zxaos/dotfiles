@@ -8,3 +8,6 @@ echo "Faking a homebrew install of rust..."
 # Fake a homebrew install of rust
 mkdir -p "$HOMEBREW_CELLAR/rust/HEAD/"
 ln -s  "$CARGO_HOME/bin" "$HOMEBREW_CELLAR/rust/HEAD/bin"
+
+# Install cargo plugins
+cargo install cargo-watch
