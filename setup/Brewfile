@@ -25,10 +25,11 @@ mas "Pixelmator Pro", id: 1289583905
 cask "vlc"
 
 # Development
+brew "gh"
 cask "tower"
 cask "zed"
 
-# Security 
+# Security
 mas "Yubico Authenticator", id: 1497506650
 
 ## asdf-vm
