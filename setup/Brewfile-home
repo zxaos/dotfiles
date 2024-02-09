@@ -1,0 +1,7 @@
+# vi: ft=ruby
+instance_eval(File.read("Brewfile-common"))
+
+
+# Media Handling
+mas "Pixelmator Pro", id: 1289583905
+cask "vlc"

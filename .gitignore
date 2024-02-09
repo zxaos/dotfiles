@@ -1,6 +1,10 @@
 # General
 .DS_Store
 
+# Setup settings
+setup/.setupstyle.sh
+Brewfile-*.lock.json
+
 # Neovim
 *.swp
 *~

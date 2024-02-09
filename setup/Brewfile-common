@@ -1,9 +1,11 @@
-# Run with `brew bundle`
+# Don't run this directly, instead run Brewfile-home or Brewfile-work
 
 # Meta
 brew "mas"
 cask "setapp"
 
+# Browsers
+cask "arc"
 
 # CLI
 brew "eza" # Maintained fork of exa
@@ -11,29 +13,25 @@ brew "ripgrep"
 cask "warp"
 
 # Communications
-# cask "camo-studio"
 cask "elgato-stream-deck"
 cask "elgato-control-center"
 mas "Slack", id: 803453959
 
-# Notes
-cask "obsidian"
-mas "Tot", id: 1491071483
-
-# Media Handling
-mas "Pixelmator Pro", id: 1289583905
-cask "vlc"
-
 # Development
 brew "gh"
+brew "shellcheck"
 cask "tower"
 cask "zed"
-
-# Security
-mas "Yubico Authenticator", id: 1497506650
 
 ## asdf-vm
 brew "coreutils"
 brew "curl"
 brew "git"
 brew "asdf"
+
+# Notes
+cask "obsidian"
+mas "Tot", id: 1491071483
+
+# Security
+mas "Yubico Authenticator", id: 1497506650
