@@ -7,9 +7,16 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "features": {
+    "copilot": false
+  },
+  "show_copilot_suggestions": true,
   "buffer_font_size": 18,
   "buffer_font_family": "Monaspace Neon",
-  "font_family": "Hack Nerd Font Mono",
+  "terminal": {
+    "dock": "right",
+    "font_family": "Hack Nerd Font Mono"
+  },
   // see https://monaspace.githubnext.com/
   "buffer_font_features": {
     "calt": true,
@@ -26,5 +33,18 @@
   },
   "font_features": {},
   "vim_mode": true,
-  "theme": "Rosé Pine Dawn"
+  "theme": {
+    "mode": "system",
+    "light": "Rosé Pine Dawn",
+    "dark": "Rosé Pine Moon"
+  },
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "checkOnSave": {
+          "command": "clippy"
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,10 @@
+{
+  "name": "neovim-env-support",
+  "version": "1.0.0",
+  "description": "dependencies for neovim node provider and installed plugins",
+  "dependencies": {
+    "fixjson": "^1.1.2",
+    "neovim": "^4.10.0",
+    "xo": "^0.48.0"
+  }
+}
