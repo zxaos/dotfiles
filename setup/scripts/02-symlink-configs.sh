@@ -13,7 +13,7 @@ symlinks+=("../../.dotfiles/configs/zed/keymap.json .config/zed/keymap.json")
 # zsh
 dirs+=(".config/zsh" ".local/share")
 symlinks+=(".dotfiles/configs/zsh/home/.zshenv .zshenv")
-symlinks+=("../../.dotfiles/configs/zsh/home/.zshenv .config/zsh/.zshenv")
+symlinks+=("../../.dotfiles/configs/zsh/home/.config/zsh/.zshenv .config/zsh/.zshenv")
 symlinks+=("../../.dotfiles/configs/zsh/home/.config/zsh/.zshrc .config/zsh/.zshrc")
 symlinks+=("../../.dotfiles/configs/zsh/home/.config/zsh/.zprofile .config/zsh/.zprofile")
 
