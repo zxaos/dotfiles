@@ -17,19 +17,19 @@
     "dock": "right",
     "font_family": "Hack Nerd Font Mono"
   },
-  // see https://monaspace.githubnext.com/
+  // see https://monaspace.githubnext.com/ , v1.101
   "buffer_font_features": {
-    "calt": true,
-    "liga": true,
-    "dlig": true,
-    "ss01": true,
-    "ss02": true,
-    "ss03": true,
-    "ss04": true,
-    "ss05": true,
-    "ss06": true,
-    "ss07": true,
-    "ss08": false
+    "calt": true, // texture healing
+    "liga": true, //  // ||
+    "ss01": true, // !==
+    "ss02": true, // >=
+    "ss03": true, // ~~>
+    "ss04": true, // </ /> </>
+    "ss05": true, // [| |] \/ /\ |>
+    "ss06": true, // ### +++ &&&
+    "ss07": true, // ::, :::, ::>
+    "ss08": true, // .=, .-, ..=
+    "ss09": true // <=>, =>,
   },
   "font_features": {},
   "vim_mode": true,
