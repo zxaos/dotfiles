@@ -18,6 +18,7 @@ cask "elgato-control-center"
 mas "Slack", id: 803453959
 
 # Development
+brew "direnv"
 brew "gh"
 brew "shellcheck"
 cask "tower"
