@@ -1,2 +1,5 @@
 # vi: ft=ruby
 instance_eval(File.read("Brewfile-common"))
+
+tap nats-io/nats-tools
+brew nats
