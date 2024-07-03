@@ -29,6 +29,9 @@ brew "curl"
 brew "git"
 brew "asdf"
 
+# Device Support
+cask "keymapp"
+
 # Notes
 cask "obsidian"
 mas "Tot", id: 1491071483
