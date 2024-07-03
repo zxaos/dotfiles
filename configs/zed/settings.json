@@ -8,7 +8,7 @@
 // from the command palette or from `Zed` application menu.
 {
   "features": {
-    "copilot": false
+    "copilot": true
   },
   "show_copilot_suggestions": true,
   "buffer_font_size": 18,
