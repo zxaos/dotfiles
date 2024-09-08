@@ -16,6 +16,9 @@ fi
 #   export VISUAL="nvim"
 # fi
 
+export EDITOR="zed --wait"
+export VISUAL="zed --wait"
+
 # Define XDG dirs
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"

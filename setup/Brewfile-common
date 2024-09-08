@@ -21,6 +21,7 @@ mas "Slack", id: 803453959
 brew "direnv"
 brew "gh"
 brew "shellcheck"
+brew "direnv"
 cask "tower"
 cask "zed"
 

@@ -10,4 +10,3 @@ l() {
 }
 
 alias neovim=$(which nvim)
-alias nvim=zed
