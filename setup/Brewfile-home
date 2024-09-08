@@ -1,6 +1,8 @@
 # vi: ft=ruby
 instance_eval(File.read("Brewfile-common"))
 
+# Entertainment
+cask "steam"
 
 # Media Handling
 mas "Pixelmator Pro", id: 1289583905
