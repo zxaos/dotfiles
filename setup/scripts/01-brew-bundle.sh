@@ -14,8 +14,18 @@ if [ -z "$setupstyle" ]; then
 fi
 
 brewtarget="Brewfile-${setupstyle}"
+
+if command -v brew 2>&1 >/dev/null; then
+    qualifiedbrew=brew
+elif command -v /opt/homebrew/bin/brew; then
+    qualifiedbrew=/opt/homebrew/bin/brew
+else
+    echo "Can't find brew, you'll have to fix this manually"
+    exit 1
+fi
+
 if [ -f "${brewtarget}" ]; then
-    brew bundle --file "${brewtarget}"
+    ${qualifiedbrew} bundle --file "${brewtarget}"
 else
     rm .brewstyle.sh
     echo "Error: template '${setupstyle}' was not found"

@@ -5,12 +5,13 @@ brew "mas"
 cask "setapp"
 
 # Browsers
-cask "arc"
+cask "arc" ## This fails if arc is already installed.
 
 # CLI
 brew "eza" # Maintained fork of exa
 brew "ripgrep"
 cask "warp"
+brew "starship"
 
 # Communications
 cask "elgato-stream-deck"
@@ -33,6 +34,8 @@ brew "asdf"
 
 # Device Support
 cask "keymapp"
+# cask "usb-overdrive"
+## This seems broken on sequoia
 
 # Notes
 cask "obsidian"
