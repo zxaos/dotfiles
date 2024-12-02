@@ -17,6 +17,7 @@ brew "starship"
 cask "elgato-stream-deck"
 cask "elgato-control-center"
 mas "Slack", id: 803453959
+cask "unclack"
 
 # Development
 brew "direnv"
@@ -34,7 +35,7 @@ brew "asdf"
 
 # Device Support
 cask "keymapp"
-# cask "usb-overdrive"
+cask "usb-overdrive"
 ## This seems broken on sequoia
 
 # Notes
