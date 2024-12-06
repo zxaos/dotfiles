@@ -7,15 +7,19 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "features": {
-    "copilot": true
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
+    },
+    "version": "2"
   },
   "show_copilot_suggestions": true,
   "buffer_font_size": 18,
-  "buffer_font_family": "Monaspace Neon",
+  "buffer_font_family": "MonaspiceNe Nerd Font",
   "terminal": {
     "dock": "right",
-    "font_family": "Hack Nerd Font Mono"
+    "font_family": "MonaspiceKr Nerd Font"
   },
   // see https://monaspace.githubnext.com/ , v1.101
   "buffer_font_features": {
