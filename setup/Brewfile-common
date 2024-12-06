@@ -23,7 +23,6 @@ cask "unclack"
 brew "direnv"
 brew "gh"
 brew "shellcheck"
-brew "direnv"
 cask "tower"
 cask "zed"
 
@@ -36,11 +35,13 @@ brew "asdf"
 # Device Support
 cask "keymapp"
 cask "usb-overdrive"
-## This seems broken on sequoia
 
 # Notes
 cask "obsidian"
 mas "Tot", id: 1491071483
+
+# Productivity
+cask "omnifocus"
 
 # Security
 mas "Yubico Authenticator", id: 1497506650
