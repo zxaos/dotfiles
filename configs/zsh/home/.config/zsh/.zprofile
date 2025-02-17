@@ -16,11 +16,8 @@ else
 fi
 
 ## asdf
-if [ -f /opt/homebrew/opt/asdf/libexec/asdf.sh ]; then
-    source /opt/homebrew/opt/asdf/libexec/asdf.sh
-elif [ -f /usr/local/opt/asdf/libexec/asdf.sh ]; then
-    source /usr/local/opt/asdf/libexec/asdf.sh
-fi
+export ASDF_DATA_DIR="$HOME/.asdf"
+path=("$ASDF_DATA_DIR/shims" $path)
 
 ## rust
 path=("$CARGO_HOME/bin" $path)
