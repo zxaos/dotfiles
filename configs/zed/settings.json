@@ -16,13 +16,9 @@
   },
   "show_copilot_suggestions": true,
   "buffer_font_size": 18,
-  "buffer_font_family": "MonaspiceNe Nerd Font",
-  "terminal": {
-    "dock": "right",
-    "font_family": "MonaspiceKr Nerd Font"
-  },
-  // see https://monaspace.githubnext.com/ , v1.101
+  "buffer_font_family": "Monaspace Neon",
   "buffer_font_features": {
+    // see https://monaspace.githubnext.com/ , v1.200
     "calt": true, // texture healing
     "liga": true, //  // ||
     "ss01": true, // !==
@@ -35,12 +31,41 @@
     "ss08": true, // .=, .-, ..=
     "ss09": true // <=>, =>,
   },
-  "font_features": {},
+  "terminal": {
+    "font_family": "Monaspace Krypton",
+    "font_features": {
+      "calt": true,
+      "liga": true,
+      "ss01": true,
+      "ss02": true,
+      "ss03": true,
+      "ss04": true,
+      "ss05": true,
+      "ss06": true,
+      "ss07": true,
+      "ss08": true,
+      "ss09": true
+    }
+  },
+
+  "experimental.theme_overrides": {
+    "syntax": {
+      "comment": {
+        "font_style": "italic",
+        "font_family": "Monaspace Radon"
+      },
+      "comment.doc": {
+        "font_style": "italic",
+        "font_family": "Monaspace Radon"
+      }
+    }
+  },
+
   "vim_mode": true,
   "theme": {
     "mode": "system",
-    "light": "Rosé Pine Dawn",
-    "dark": "Rosé Pine Moon"
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Macchiato"
   },
   "lsp": {
     "rust-analyzer": {
