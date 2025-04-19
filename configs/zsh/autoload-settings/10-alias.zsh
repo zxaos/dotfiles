@@ -10,3 +10,5 @@ l() {
 }
 
 alias neovim=$(which nvim)
+
+alias tf=terraform

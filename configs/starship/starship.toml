@@ -12,12 +12,20 @@ disabled = false
 [direnv]
 disabled = false
 
+[kubernetes]
+disabled = false
+detect_folders = ["helm"]
+[[kubernetes.contexts]]
+context_pattern = ".*observable-production-default.*"
+style = "red"
+context_alias = "prod"
+
 # There's no point in these until Warp renders the input on the same line as the prompt
-[character]
-disabled = true
+# [character]
+# disabled = true
 
-[line_break]
-disabled = true
+# [line_break]
+# disabled = true
 
-[docker_context]
-disabled = true
+# [docker_context]
+# disabled = true

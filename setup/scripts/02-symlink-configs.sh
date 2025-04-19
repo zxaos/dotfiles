@@ -2,7 +2,12 @@
 dirs=(".config .cache .local/share .local/state .ssh/sock")
 symlinks=()
 
+# ghostty
+dirs+=(".config/ghostty")
+symlinks+=("../../.dotfiles/configs/ghostty/config .config/ghostty/config")
+
 # starship
+# NB This should only have one .. because it's relative to the .config path and there's no starship subdir
 symlinks+=("../.dotfiles/configs/starship/starship.toml .config/starship.toml")
 
 # zed editor
