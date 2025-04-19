@@ -1,4 +1,6 @@
 alias exa=eza
+alias neovim=$(which nvim)
+alias tf=terraform
 
 # l as eza
 l() {
@@ -8,7 +10,3 @@ l() {
     eza -l --icons "$@"
   fi
 }
-
-alias neovim=$(which nvim)
-
-alias tf=terraform
