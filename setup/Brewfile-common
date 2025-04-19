@@ -9,6 +9,7 @@ cask "arc" ## This fails if arc is already installed.
 
 # CLI
 brew "eza" # Maintained fork of exa
+brew "fd" # Find replacement
 brew "ripgrep"
 cask "warp"
 brew "starship"
