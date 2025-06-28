@@ -57,6 +57,11 @@
       }
     }
   },
+  "icon_theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Macchiato"
+  },
   "theme": {
     "mode": "system",
     "light": "Catppuccin Latte",
@@ -75,10 +80,10 @@
     }
   },
 
-  "assistant": {
+  "agent": {
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-latest"
+      "model": "claude-sonnet-4"
     },
     "version": "2"
   },
