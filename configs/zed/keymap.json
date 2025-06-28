@@ -7,16 +7,16 @@
       // HJKL -> YNEO
       // (Y)ank -> (H)aul
       "y": "vim::Left",
-      "h": ["vim::PushOperator", "Yank"],
+      "h": "vim::PushYank",
       // Search (N)ext -> (J)ump / (J)oin -> Joi(n)
       "n": "vim::Down",
       "shift-n": "vim::JoinLines",
       "j": "search::SelectNextMatch",
-      "shift-j": "search::SelectPrevMatch",
+      "shift-j": "search::SelectPreviousMatch",
       // (E)nd of word -> brea(K) of word
       "e": "vim::Up",
       "k": "vim::NextWordEnd",
-      "shift-k": ["vim::NextWordEnd", { "ignorePunctuation": true }],
+      "shift-k": ["vim::NextWordEnd", { "ignore_punctuation": true }],
       // (O)pen line -> (L)ine
       "o": "vim::Right"
     }
@@ -48,6 +48,7 @@
     "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
     "bindings": {
       // visual, visual line & visual block modes
+      "h": "vim::VisualYank"
     }
   },
   {
