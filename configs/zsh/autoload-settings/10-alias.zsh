@@ -7,6 +7,6 @@ l() {
   if [[ $1 == -* ]]; then # don't use default args if first arg starts with -
     eza "$@"
   else
-    eza -l --icons "$@"
+    eza -l --icons --git --smart-group "$@"
   fi
 }
