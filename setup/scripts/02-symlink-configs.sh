@@ -2,6 +2,13 @@
 dirs=(".config .cache .local/share .local/state .ssh/sock")
 symlinks=()
 
+# jj
+dirs+=(".config/git .config/jj")
+symlinks+=("../../.dotfiles/configs/jj/config.toml .config/jj/config.toml")
+## jj doesn't have a flag we can configure for global ignores
+## but it does read config/git for a global gitignore
+symlinks+=("../../.dotfiles/configs/git/gitignore_global .config/git/ignore")
+
 # ghostty
 dirs+=(".config/ghostty")
 symlinks+=("../../.dotfiles/configs/ghostty/config .config/ghostty/config")

@@ -1,0 +1,13 @@
+"$schema" = "https://jj-vcs.github.io/jj/latest/config-schema.json"
+
+[user]
+name = "Matt Bond"
+email = "matt+git@codefire.io"
+
+[signing]
+behavior = "own"
+backend = "ssh"
+key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBg4ehIbBvgsmGle9R5xzAYNrAZlNhF2JUueIotwCgrJ"
+
+[signing.backends.ssh]
+program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"

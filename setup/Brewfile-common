@@ -24,6 +24,7 @@ cask "unclack"
 # Development
 brew "direnv"
 brew "gh"
+brew "jj"
 brew "shellcheck"
 cask "tower"
 cask "zed"

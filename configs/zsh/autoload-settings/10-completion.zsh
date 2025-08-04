@@ -9,3 +9,7 @@ zstyle :compinstall filename "~/${ZDOTDIR}/.zshrc"
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+if type jj &>/dev/null; then
+    source <(COMPLETE=zsh jj)
+fi
