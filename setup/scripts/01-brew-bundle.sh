@@ -9,7 +9,7 @@ if [ -f "$prefs" ]; then
 fi
 
 if [ -z "$setupstyle" ]; then
-    read -r -p "Use which template for Brewfile? (home | work): " setupstyle
+    read -r -p "Use which template for Brewfile? (home | work | home-laptop): " setupstyle
     echo "setupstyle=${setupstyle}" > "$prefs"
 fi
 

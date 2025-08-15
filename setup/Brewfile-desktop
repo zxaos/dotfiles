@@ -1,0 +1,11 @@
+# Meta
+cask "setapp"
+
+# Communications
+cask "elgato-stream-deck"
+cask "elgato-control-center"
+cask "unclack"
+
+# Device Support
+cask "keymapp"
+cask "usb-overdrive"

@@ -1,5 +1,5 @@
-# vi: ft=ruby
-instance_eval(File.read("Brewfile-common"))
+# Communication
+cask "discord"
 
 # Entertainment
 cask "steam"
@@ -7,3 +7,6 @@ cask "steam"
 # Media Handling
 mas "Pixelmator Pro", id: 1289583905
 cask "vlc"
+
+# 3D Printing
+cask "orcaslicer"

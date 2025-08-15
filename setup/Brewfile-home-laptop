@@ -1,0 +1,3 @@
+# vi: ft=ruby
+instance_eval(File.read("Brewfile-common"))
+instance_eval(File.read("Brewfile-home"))

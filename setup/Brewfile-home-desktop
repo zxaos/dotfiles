@@ -1,8 +1,4 @@
 # vi: ft=ruby
 instance_eval(File.read("Brewfile-common"))
 instance_eval(File.read("Brewfile-desktop"))
-
-brew "awscli"
-brew "kubectx"
-
-cask "tailscale"
+instance_eval(File.read("Brewfile-home"))
