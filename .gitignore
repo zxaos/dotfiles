@@ -19,7 +19,7 @@ configs/tmux/tmuxline.conf
 
 # ZSH
 .zcompdump
-configs/zsh/autoload-settings/*-local-*.zsh*
+configs/zsh/autoload-settings/*-local*.zsh*
 **/.zsh_history
 
 # Onivim
