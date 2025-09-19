@@ -7,6 +7,19 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "ssh_connections": [
+    {
+      "host": "3.87.91.161",
+      "username": "admin",
+      "projects": [
+        {
+          "paths": [
+            "/home/admin"
+          ]
+        }
+      ]
+    }
+  ],
   "features": {
     "edit_prediction_provider": "zed"
   },
