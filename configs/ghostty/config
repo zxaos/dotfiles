@@ -2,3 +2,8 @@ theme = "light:Catppuccin Latte, dark:Catppuccin Macchiato"
 font-family = "Monaspace Neon"
 font-size = 16
 font-feature = "calt, liga, ss01, ss02, ss03, ss04, ss05, ss06, ss07, ss08, ss09"
+
+shell-integration-features = true
+
+quick-terminal-size = 75%,33%
+keybind = global:cmd+backquote=toggle_quick_terminal
