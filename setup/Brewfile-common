@@ -16,6 +16,8 @@ brew "starship"
 
 # Communications
 mas "Slack", id: 803453959
+mas "Mic Drop", id: 1489816366
+
 
 # Development
 brew "direnv"
