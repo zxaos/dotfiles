@@ -20,7 +20,11 @@ mas "Mic Drop", id: 1489816366
 
 
 # Development
+brew "curl"
+brew "coreutils"
+brew "direnv"
 brew "gh"
+brew "git"
 brew "jj"
 brew "mise"
 brew "shellcheck"
