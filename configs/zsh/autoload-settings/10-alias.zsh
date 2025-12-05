@@ -1,6 +1,7 @@
 alias exa=eza
 alias neovim=$(which nvim)
 alias tf=terraform
+alias dig="echo 'probably use doggo instead unless you're scripting?'"
 
 # l as eza
 l() {
