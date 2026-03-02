@@ -15,9 +15,5 @@ else
   echo "WARNING: no homebrew paths added!"
 fi
 
-## asdf
-export ASDF_DATA_DIR="$HOME/.asdf"
-path=("$ASDF_DATA_DIR/shims" $path)
-
 ## rust
 path=("$CARGO_HOME/bin" $path)
