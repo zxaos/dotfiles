@@ -4,7 +4,7 @@
 brew "mas"
 
 # Browsers
-cask "arc" ## This fails if arc is already installed.
+# cask "arc" ## This fails if arc is already installed.
 
 # CLI
 brew "eza" # Maintained fork of exa
@@ -20,25 +20,15 @@ mas "Mic Drop", id: 1489816366
 
 
 # Development
-brew "direnv"
 brew "gh"
 brew "jj"
+brew "mise"
 brew "shellcheck"
-cask "tower"
 cask "zed"
-
-## asdf-vm
-brew "coreutils"
-brew "curl"
-brew "git"
-brew "asdf"
 
 # Notes
 cask "obsidian"
 mas "Tot", id: 1491071483
-
-# Productivity
-cask "omnifocus"
 
 # Security
 mas "Yubico Authenticator", id: 1497506650
