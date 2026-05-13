@@ -4,7 +4,8 @@
 brew "mas"
 
 # Browsers
-# cask "arc" ## This fails if arc is already installed.
+cask "arc" ## This fails if arc is already installed.
+mas "1Password for Safari", id: 1569813296
 
 # CLI
 brew "eza" # Maintained fork of exa
@@ -28,6 +29,7 @@ brew "jj"
 brew "mise"
 brew "shellcheck"
 cask "zed"
+mas "Patterns", id: 429449079
 
 # Notes
 cask "obsidian"

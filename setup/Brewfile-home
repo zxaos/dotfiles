@@ -2,7 +2,7 @@
 cask "discord"
 
 # Entertainment
-cask "steam"
+# cask "steam" # Right now, this cask forces the x86 and we would perfer the arm one
 
 # Media Handling
 mas "Pixelmator Pro", id: 1289583905
@@ -10,3 +10,6 @@ cask "vlc"
 
 # 3D Printing
 cask "orcaslicer"
+
+# Utilities
+mas "Parcel", id: 375589283
