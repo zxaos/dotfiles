@@ -15,10 +15,10 @@ else
   echo "WARNING: no homebrew paths added!"
 fi
 
+## local bin, e.g. herdr, sprites
+path=("$HOME/.local/bin" $path)
+
 ## rust
 # (NB: we must _not_ quote path here or else the expansion doesn't work properly)
 # shellcheck disable=SC2206
 path=("$CARGO_HOME/bin" $path)
-
-## fly sprites
-path+=("$HOME/.local/bin")
