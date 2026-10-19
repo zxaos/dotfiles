@@ -29,8 +29,12 @@ brew "git"
 brew "jj"
 brew "mise"
 brew "shellcheck"
+cask "orbstack"
 cask "zed"
 mas "Patterns", id: 429449079
+
+# Fonts
+cask "font-monaspace-nf"
 
 # Notes
 cask "obsidian"
