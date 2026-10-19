@@ -8,9 +8,8 @@ Probably of limited utility to other people.
 * `cd setup; ./run-all-scripts.sh`
   * This will need to be done multiple times as some scripts require restarting the process
 
+### Zed Setup
+* Install catppuccin theme
+
 ## Old Notes that might still be useful
 * Fake a homebrew elixir install by symlinking /usr/local/Cellar/elixir/HEAD/bin/elixir to ~/.asdf/shims/elixir and setting the asdf global elixir version appropriately
-* ditto for erlang
-
-### Set up Neovim
-* When setting up the node globals for this env, prepend with ASDF_SKIP_RESHIM=1 to speed it up
